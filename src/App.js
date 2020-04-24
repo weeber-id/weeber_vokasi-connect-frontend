@@ -1,18 +1,13 @@
 import React from 'react';
 import './App.scss';
-import CardList from '../src/components/cards/cardlist';
-
 import { Route } from 'react-router-dom';
+
+import TestPage from './pages/test-page/test-page';
 
 function App() {
   return (
     <div className="App">
-      <Route
-        path="/"
-        render={() => {
-          return <CardList/>;
-        }}
-      />
+      <Route exact path="/test-page" component={TestPage} />
     </div>
   );
 }

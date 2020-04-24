@@ -1,0 +1,30 @@
+.artikel-card {
+  width: 25rem;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 35rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+
+  &__thumbnail {
+    height: 15rem;
+    background-color: blanchedalmond;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__preview {
+    padding: 1rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+
+  &__content {
+    font-size: 1.2rem;
+    color: #bbb;
+  }
+}
