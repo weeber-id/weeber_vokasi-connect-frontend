@@ -3,16 +3,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
-  background-color: #85c3c0;
+  padding: 0 5rem;
+  background-color: var(--color-light-blue-1);
   color: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 
+  &--navy {
+    background-color: var(--color-navy-1);
+  }
+
+  &--green {
+    background-color: var(--color-green-1);
+  }
+
   &__item {
     cursor: pointer;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: inherit;
+    }
+
     &:not(:last-child) {
       margin-right: 2rem;
     }

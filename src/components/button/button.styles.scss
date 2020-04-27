@@ -1,7 +1,9 @@
 .btn {
   padding: 1rem 2rem;
   border: none;
-  background-color: rgb(13, 99, 128);
-  color: white;
+  background-color: var(--color-yellow-1);
+  color: var(--color-navy-1);
   cursor: pointer;
+  font-weight: 700;
+  border-radius: 1rem;
 }

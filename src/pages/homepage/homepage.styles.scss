@@ -1,0 +1,75 @@
+.heroes {
+  background-color: var(--color-light-blue-1);
+  padding: 0rem 5rem;
+  display: flex;
+  align-items: center;
+
+  &__welcome {
+    width: 50%;
+
+    span {
+      color: var(--color-yellow-1);
+    }
+  }
+
+  &__picture {
+    width: 50%;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.aspirasi {
+  padding: 3rem 5rem;
+  background-color: var(--color-light-grey-1);
+
+  &__content {
+    display: flex;
+  }
+
+  &__picture {
+    width: 50%;
+    align-self: flex-end;
+    margin-top: 5rem;
+
+    svg {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  &__description {
+    width: 50%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 1.6rem;
+      color: var(--color-dark-grey-1);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+.form-aspirasi {
+  padding: 3rem 5rem;
+  margin-top: -7rem;
+  position: relative;
+  z-index: 4;
+  background-color: var(--color-navy-1);
+}
