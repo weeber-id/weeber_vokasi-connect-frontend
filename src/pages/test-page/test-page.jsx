@@ -6,7 +6,7 @@ import ArtikelCard from '../../components/artikel-card/artikel-card';
 
 const TestPage = () => (
   <div className="test-page">
-    {/* <Header /> */}
+    <Header />
     <Button>Ini Button</Button>
     <ArtikelCard />
   </div>
