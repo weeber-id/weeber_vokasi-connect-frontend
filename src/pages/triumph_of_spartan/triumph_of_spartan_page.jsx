@@ -1,12 +1,14 @@
 import React from 'react';
-import CardList from '../../components/cards/cardlist';
-import Documentation from '../../components/documentation';
+import CardList from '../../components/triumph-of-spartan/cards/cardlist';
+import DocList from '../../components/triumph-of-spartan/dokumentasi-list';
 
 const Triumph = () => {
     return(
         <div>
             <CardList/>
-            <Documentation/>
+            <DocList/>
         </div>
     );
 }
+
+export default Triumph;

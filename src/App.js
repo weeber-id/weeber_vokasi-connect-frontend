@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
-import CardList from '../src/components/cards/cardlist';
+import Triumph from '../src/pages/triumph_of_spartan/triumph_of_spartan_page';
+import ProdiPage from '../src/pages/info_prodi/info_prodi_page';
 
 import { Route } from 'react-router-dom';
 
@@ -10,9 +11,11 @@ function App() {
       <Route
         path="/"
         render={() => {
-          return <CardList/>;
+          return <h1>Header</h1>;
         }}
       />
+      <Route exact path='/triumph' component={Triumph} />
+        <Route path='/info-prodi' component={ProdiPage} />
     </div>
   );
 }
