@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../assets/fonts/Product\ Sans\ Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  font-weight: bold;
+  src: url('../assets/fonts/Product\ Sans\ Regular.ttf') format('truetype');
+}
+
 *,
 *::after,
 *::before {
@@ -15,4 +26,5 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
+  font-family: 'Muli', sans-serif;
 }

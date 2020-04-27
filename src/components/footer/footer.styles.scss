@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-black-1);
+  padding: 2rem 5rem;
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__right {
+    align-self: flex-end;
+    .text {
+      text-align: right;
+      color: white;
+    }
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+
+  &__description {
+    color: white;
+    font-size: 0.8rem;
+    width: 50%;
+  }
+}
