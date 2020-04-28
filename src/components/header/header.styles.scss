@@ -10,6 +10,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 
   &--navy {
     background-color: var(--color-navy-1);
@@ -17,6 +18,10 @@
 
   &--green {
     background-color: var(--color-green-1);
+  }
+
+  &--tos {
+    background-color: var(--color-black-2);
   }
 
   &__item {

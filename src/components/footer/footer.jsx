@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReactComponent as LogoFooter } from '../../assets/logos/logobemfooter.svg';
+import { ReactComponent as LogoFooter } from '../../assets/logos/logobemfooter-01.svg';
 import { ReactComponent as Instagram } from '../../assets/icons/instagram.svg';
 import { ReactComponent as Line } from '../../assets/icons/line.svg';
 import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg';
@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__left">
         <div className="footer__logo">
-          <LogoFooter height="10rem" width="10rem" />
+          <LogoFooter height="20rem" width="20rem" />
         </div>
         <p className="footer__description">
           Kami percaya bahwa semua mahasiswa memiliki kesempatan yang sama untuk
@@ -21,9 +21,30 @@ const Footer = () => {
       </div>
       <div className="footer__right">
         <div className="footer__socmed">
-          {/* <Instagram height="5rem" width="5rem" />
-          <Line />
-          <Twitter /> */}
+          <a
+            className="footer__socmed-icon"
+            href="https://instagram.com/vokasi_ui"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram height="3rem" width="3rem" />
+          </a>
+          <a
+            className="footer__socmed-icon"
+            href="https://instagram.com/vokasi_ui"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Line height="3rem" width="3rem" />
+          </a>
+          <a
+            className="footer__socmed-icon"
+            href="https://instagram.com/vokasi_ui"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter height="3rem" width="3rem" />
+          </a>
         </div>
         <p className="text">&copy; 2020 Made by Love</p>
         <p className="text">Biro Desain Komunikasi Visual BEM Vokasi UI 2020</p>
