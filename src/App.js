@@ -4,7 +4,7 @@ import './App.scss';
 import Triumph from '../src/pages/triumph_of_spartan/triumph_of_spartan_page';
 import ProdiPage from '../src/pages/info_prodi/info_prodi_page';
 import Header from '../src/components/header/header';
-import Footer from '../src/components/footer/footer';
+
 import { Route, Switch } from 'react-router-dom';
 
 import TestPage from './pages/test-page/test-page';
@@ -25,7 +25,7 @@ function App() {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/test-page" component={TestPage} />
       </Switch>
-      <Footer/>
+      
     </div>
   );
 }

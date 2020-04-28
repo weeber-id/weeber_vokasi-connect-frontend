@@ -1,15 +1,25 @@
 .documentation-h1 {
     text-align: center;
     color: #464646;
+    
 }
 
-.documentation-img {
-    height: 580px;
-    width: 580px;
+.documentation-column {
+    float: left;
+    width: 25%;
+    padding-top: 10px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 95px;
+    display: table; 
+    
+}
+
+.documentation-img-fluid {
+    height: 450px;
+    width: 450px;
     object-fit: contain;
-    border-radius: 2%;
-    
-    
+    border-radius: 0%;
 }
 
 

@@ -3,9 +3,14 @@ import './documentation.styles.scss';
 
 const Documentation = ({id,imgUrl}) => {
     return(
-        <div className="documentation-section">
-            <img className="documentation-img" alt= "" src={imgUrl}/>
+        <div className= "documentation">
+            <div className = "documentation-column">
+            <div className="documentation-card">
+                <img className="documentation-img-fluid" alt= "" src={imgUrl}/>
+            </div>
         </div>
+        </div>
+        
     );
 };
 
