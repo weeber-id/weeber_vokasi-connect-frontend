@@ -12,14 +12,8 @@ import HomePage from './pages/homepage/homepage';
 function App() {
   return (
     <div className="App">
-      <Route
-        path="/"
-        render={() => {
-          return <h1>Header</h1>;
-        }}
-      />
-      <Route exact path='/triumph' component={Triumph} />
-        <Route path='/info-prodi' component={ProdiPage} />
+      <Route exact path="/triumph" component={Triumph} />
+      <Route path="/info-prodi" component={ProdiPage} />
       <Route exact path="/" component={HomePage} />
       <Route exact path="/test-page" component={TestPage} />
     </div>
