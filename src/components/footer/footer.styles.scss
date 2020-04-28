@@ -11,6 +11,9 @@
 
   &__right {
     align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     .text {
       text-align: right;
       color: white;
@@ -18,12 +21,24 @@
   }
 
   &__logo {
-    height: 10rem;
+    height: 20rem;
+    margin-top: -7rem;
   }
 
   &__description {
     color: white;
     font-size: 0.8rem;
     width: 50%;
+    margin-top: -6rem;
+  }
+
+  &__socmed {
+    margin-left: auto;
+  }
+
+  &__socmed-icon {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 }
