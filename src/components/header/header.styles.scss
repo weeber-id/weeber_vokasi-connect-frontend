@@ -28,6 +28,10 @@
     background-color: var(--color-black-2);
   }
 
+  &--yellow {
+    background-color: var(--color-yellow-2);
+  }
+
   &__item {
     cursor: pointer;
     text-decoration: none;

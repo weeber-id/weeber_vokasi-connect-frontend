@@ -1,0 +1,21 @@
+.event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: var(--color-green-1);
+  border-radius: 1rem;
+  transition: transform 0.3s;
+  transform: scale(0.8);
+  height: 18rem;
+
+  &.active {
+    transform: scale(1);
+  }
+
+  &__img {
+    width: 10rem;
+    height: auto;
+  }
+}
