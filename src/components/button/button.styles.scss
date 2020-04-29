@@ -10,4 +10,10 @@
   &:focus {
     outline: none;
   }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-yellow-2);
+    }
+  }
 }
