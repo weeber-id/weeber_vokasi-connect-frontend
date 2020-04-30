@@ -1,0 +1,72 @@
+.event-page {
+  &__container {
+    padding: 3rem 5rem;
+    margin-top: 8rem;
+    background-color: var(--color-yellow-2);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__tambahan {
+    height: 3rem;
+    background-color: var(--color-green-1);
+  }
+
+  &__swiper {
+    position: relative;
+  }
+}
+
+.arrow {
+  @mixin arrow($deg) {
+    border-right: 0.8rem solid rgba(white, 0.5);
+    border-bottom: 0.8rem solid rgba(white, 0.5);
+    height: 3rem;
+    width: 3rem;
+    transform: rotate($deg) translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @media (hover: hover) {
+      &:hover {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-right: 1rem solid rgba(white, 0.7);
+        border-bottom: 1rem solid rgba(white, 0.7);
+      }
+    }
+  }
+
+  &__right {
+    @include arrow(-45deg);
+    position: absolute;
+    top: 45%;
+    right: 37%;
+    z-index: 100;
+
+    @media only screen and (max-width: 800px) {
+      right: 25%;
+    }
+    @media only screen and (max-width: 480px) {
+      right: -5%;
+    }
+  }
+
+  &__left {
+    @include arrow(135deg);
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    z-index: 100;
+
+    @media only screen and (max-width: 800px) {
+      left: 25%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      left: -5%;
+    }
+  }
+}
