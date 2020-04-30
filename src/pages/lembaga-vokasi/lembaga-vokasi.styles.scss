@@ -1,0 +1,68 @@
+.lembaga-vokasi {
+  &__heroes {
+    display: flex;
+    background-color: var(--color-yellow-2);
+    padding: 0 5rem;
+    margin-top: 5rem;
+  }
+
+  &__illustration {
+    width: 50%;
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+
+    h1 {
+      font-size: 6rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+.lihat-selengkapnya {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--color-green-1);
+
+  & > span {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 3px solid white;
+    border-radius: 20rem;
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #fff;
+        color: var(--color-green-1);
+      }
+    }
+  }
+}
+
+.lembaga-lembaga {
+  &__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 3rem;
+    padding: 3rem 0;
+  }
+  max-height: 100rem;
+  overflow: hidden;
+  padding: 0rem 5rem;
+  transition: all 1s linear;
+
+  &.collapse {
+    padding: 0rem 5rem;
+    max-height: 0rem;
+  }
+}
