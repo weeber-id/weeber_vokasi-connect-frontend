@@ -1,30 +1,35 @@
 import React from 'react';
 import Card from './Card';
 
+import gbrOlim from '../../assets/images/Olim UI.jpg';
+import gbrParade from '../../assets/images/Parade.JPG';
+import gbrOim from '../../assets/images/OIM UI.jpg';
+import gbrUiaw from '../../assets/images/UI Art War.jpg';
+
 const lomba = [
   {
     id: 1,
     event: 'Parade',
     desc: 'Pembukaan event Pesta Rakyat UI (OLIM, OIM, UI Art War)',
-    picture: 'link asset aris'
+    picture: gbrParade
   },
   {
     id: 2,
     event: 'OLIM UI',
     desc: 'Kompetisi Mahasiswa UI di bidang Seni Budaya',
-    picture: 'link asset aris'
+    picture: gbrOlim
   },
   {
     id: 3,
     event: 'UI Art War',
     desc: 'Kompetisi mahasiswa UI di bidang Seni Budaya',
-    picture: 'link asset aris'
+    picture: gbrUiaw
   },
   {
     id: 4,
     event: 'OIM UI',
     desc: 'Kompetisi mahasiswa UI di bidang Keilmuan',
-    picture: 'link asset aris'
+    picture: gbrOim
   }
 ];
 
