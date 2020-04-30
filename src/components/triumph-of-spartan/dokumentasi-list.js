@@ -29,7 +29,7 @@ const dokum = [
   const DocList = () => {
       return (
         <div className= "doclist">
-            <h1 className="documentation-h1">Dokumentasi</h1>
+            <h1 className="documentation-h1"><b>Dokumentasi</b></h1>
             <div className= "doclist-image">
                 {dokum.map(({id, ...dokumProps}) => (
                 <Documentation {...dokumProps} key={id}/>

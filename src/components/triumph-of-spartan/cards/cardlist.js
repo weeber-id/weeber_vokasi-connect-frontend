@@ -37,14 +37,19 @@ const lomba = [
 
 const CardList = () => {
     return (
-      <div className= "triumph-of-spartan-card">
-        <p className="intro">Triumph Of Spartan merupakan ruang apresiasi bagi mahasiswa dan kontingen Vokasi UI yang berlaga dalam OLIM UI, UI Art War, dan OIM UI. Triumph Of Spartan bergerak didasari oleh rasa cinta dan kebanggaan terhadap Vokasi UI.</p>
+      <div className= "triumph-of-spartan">
+        <div className= "triumph-of-spartan-text-container">
+        <h3 className="triumph-of-spartan-h3">Triumph Of Spartan merupakan ruang apresiasi bagi mahasiswa dan kontingen Vokasi UI yang berlaga dalam OLIM UI, UI Art War, dan OIM UI. Triumph Of Spartan bergerak didasari oleh rasa cinta dan kebanggaan terhadap Vokasi UI.</h3>
+        </div>
+        <div className= "triumph-of-spartan-card">
         <div>
          {lomba.map(({id, ...lombaProps}) => (
           <Card {...lombaProps} key={id}  />
         ))}
       </div>
       </div>
+      </div>
+      
       
     );
   }
