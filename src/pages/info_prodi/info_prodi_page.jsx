@@ -91,7 +91,7 @@ const sarjanaT = [
   },
   {
     id: 5,
-    title: 'Manajemen BIsnis Pariwisata',
+    title: 'Manajemen Bisnis Pariwisata',
     svgUrl: prodi14
   },
   {
@@ -106,41 +106,45 @@ const ProdiPage = () => {
     <article className="info-prodi-page">
       <Header color="navy" />
       <main>
-        <section className="info-prodi-illustration">
-          <div className="info-prodi-main">
-            <h1 style={{ color: 'navy' }} className="heading-primary">
+        <section className="info-prodi">
+          <div className="info-prodi__picture">
+            <ProdiIllustration />
+          </div>
+          <div className="info-prodi__main">
+            <h1 style={{ color: '#395f7d' }} className="heading-primary">
               <span>Info</span> <br /> Program Studi
             </h1>
-            <div className="heroes__picture">
-              <ProdiIllustration />
-            </div>
           </div>
-          <div className="prodi-page__tambahan" />
         </section>
+        <div className="info-prodi__tambahan" />
         <section className="info-prodi-ahli-madya">
           <div>
             <h1
-              style={{ color: 'navy' }}
+              style={{ color: '#395f7d' }}
               className="heading-primary text-align-left mb-sm"
             >
               Ahli Madya Terapan
             </h1>
-            {aMD.map(({ id, ...aMDProps }) => (
-              <ProdiCard {...aMDProps} key={id} />
-            ))}
+            <div className="prodi-card-container">
+              {aMD.map(({ id, ...aMDProps }) => (
+                <ProdiCard {...aMDProps} key={id} />
+              ))}
+            </div>
           </div>
         </section>
         <section className="info-prodi-sarjana-terapan">
           <div>
             <h1
-              style={{ color: 'navy' }}
+              style={{ color: '#395f7d' }}
               className="heading-primary text-align-left mb-sm"
             >
               Sarjana Terapan
             </h1>
-            {sarjanaT.map(({ id, ...sarjanaTProps }) => (
-              <ProdiCard {...sarjanaTProps} key={id} />
-            ))}
+            <div className="prodi-card-container">
+              {sarjanaT.map(({ id, ...sarjanaTProps }) => (
+                <ProdiCard {...sarjanaTProps} key={id} />
+              ))}
+            </div>
           </div>
         </section>
       </main>

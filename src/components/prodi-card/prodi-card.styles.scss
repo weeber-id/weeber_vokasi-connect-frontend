@@ -8,15 +8,17 @@
   border-radius: 1rem;
   transition: transform 0.3s;
   transform: scale(0.8);
-  height: 18rem;
+  height: 20rem;
+  width: 30rem;
 
   &.active {
     transform: scale(1);
   }
 
   &__img {
-    width: 10rem;
+    width: 7rem;
     height: auto;
     justify-content: center;
+    align-items: flex-end;
   }
 }
