@@ -1,68 +1,37 @@
-.info-prodi-illustration {
+.info-prodi {
   background-color: var(--color-light-grey-1);
-  padding: 3rem 5rem;
-  margin-top: 8rem;
+  padding: 3rem 3rem;
+  padding-top: 0rem;
+  padding-left: 0rem;
+  margin-top: 7rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  &__welcome {
-    width: 50%;
-
-    span {
-      color: var(--color-yellow-1);
-    }
-  }
-
-  &__picture {
+  &__picture,
+  &__main {
     width: 50%;
 
     svg {
       width: 100%;
       height: auto;
+      align-items: flex-end;
     }
+  }
+
+  &__tambahan {
+    height: 4rem;
+    width: 100%;
+    background-color: var(--color-navy-1);
+    align-items: flex-end;
+    margin-top: -4rem;
   }
 }
 
-.aspirasi {
-  padding: 3rem 5rem;
-  background-color: var(--color-light-grey-1);
+.prodi-card-container {
+  display: grid;
+  align-items: center;
 
-  &__content {
-    display: flex;
-  }
-
-  &__picture {
-    width: 50%;
-    align-self: flex-end;
-    margin-top: 5rem;
-
-    svg {
-      width: 90%;
-      height: auto;
-    }
-  }
-
-  &__description {
-    width: 50%;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-
-    span {
-      font-size: 1.6rem;
-      color: var(--color-dark-grey-1);
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
-  }
-
-  &__icon {
-    width: 5rem;
-    height: 5rem;
-    margin-right: 2rem;
-  }
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
