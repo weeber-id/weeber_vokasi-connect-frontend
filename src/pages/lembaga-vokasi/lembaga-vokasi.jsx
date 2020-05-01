@@ -8,6 +8,60 @@ import { ReactComponent as Illustration } from '../../assets/illustrations/lemba
 
 const LembagaVokasiPage = () => {
   const [isCollapse, setCollapse] = useState(true);
+
+  const lembaga_lembaga = [
+    {
+      name: 'DPM VOKASI UI',
+      fileName: 'dpm-ui.jpg',
+      url: 'dpm-vokasi-ui'
+    },
+    {
+      name: 'BEM VOKASI UI',
+      fileName: 'bem-vokasi-ui.png',
+      url: 'bem-vokasi-ui'
+    },
+    {
+      name: 'HIMRA UI',
+      fileName: 'himra-ui.jpg',
+      url: 'himra-ui'
+    },
+    {
+      name: 'HIM ADM UI',
+      fileName: 'him-adm-ui.jpg',
+      url: 'him-adm-ui'
+    },
+    {
+      name: 'HMVA UI',
+      fileName: 'hmva-ui.jpg',
+      url: 'hmva-ui'
+    },
+    {
+      name: 'IMPERATIF UI',
+      fileName: 'imperatif-ui.jpg',
+      url: 'imperatif-ui'
+    },
+    {
+      name: 'HM VOKHUM UI',
+      fileName: 'hm-vokhum-ui.jpg',
+      url: 'hm-vokhum-ui'
+    },
+    {
+      name: 'HMRK UI',
+      fileName: 'hmrk-ui.jpg',
+      url: 'hmrk-ui'
+    },
+    {
+      name: 'HIMTA UI',
+      fileName: 'himta-ui.jpg',
+      url: 'himta-ui'
+    },
+    {
+      name: 'HMPM UI',
+      fileName: 'hmpm-ui.jpg',
+      url: 'hmpm-ui'
+    }
+  ];
+
   return (
     <>
       <Header color="yellow" />
@@ -30,11 +84,9 @@ const LembagaVokasiPage = () => {
             className={`lembaga-lembaga ${isCollapse ? 'collapse' : null}`}
           >
             <div className="lembaga-lembaga__container">
-              <LembagaVokasiCard />
-              <LembagaVokasiCard />
-              <LembagaVokasiCard />
-              <LembagaVokasiCard />
-              <LembagaVokasiCard />
+              {lembaga_lembaga.map(({ name, fileName, url }) => (
+                <LembagaVokasiCard nama={name} src={fileName} url={url} />
+              ))}
             </div>
           </section>
           <div

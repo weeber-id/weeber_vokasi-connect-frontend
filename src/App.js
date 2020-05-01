@@ -8,6 +8,7 @@ import TestPage from './pages/test-page/test-page';
 import HomePage from './pages/homepage/homepage';
 import EventPage from './pages/event-page/event-page';
 import LembagaVokasiPage from './pages/lembaga-vokasi/lembaga-vokasi';
+import LembagaVokasiDetailPage from './pages/lembaga-vokasi-detail/lembaga-vokasi-detail';
 
 function App() {
   return (
@@ -18,6 +19,11 @@ function App() {
       <Route path="/info-vokasi/info-prodi" component={ProdiPage} />
       <Route exact path="/test-page" component={TestPage} />
       <Route exact path="/lembaga-vokasi-ui" component={LembagaVokasiPage} />
+      <Route
+        exact
+        path="/lembaga-vokasi-ui/:id"
+        component={LembagaVokasiDetailPage}
+      />
     </div>
   );
 }

@@ -1,19 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const LembagaVokasiCard = ({ nama, src }) => {
+const LembagaVokasiCard = ({ nama, src, url }) => {
   return (
-    <div className="lembaga-lembaga__card">
-      <div className="lembaga-lembaga__img-container">
-        <img
-          src={require('../../assets/logos/lembaga-vokasi/dpm-ui.jpg')}
-          alt="dpm ui"
-          className="lembaga-lembaga__img"
-        />
-      </div>
-      <div className="lembaga-lembaga__nama-lembaga">
-        <span>DPM VOKASI UI</span>
-      </div>
-    </div>
+    <>
+      <Link style={{ textDecoration: 'none' }} to={`/lembaga-vokasi-ui/${url}`}>
+        <div className="lembaga-lembaga__card">
+          <div className="lembaga-lembaga__img-container">
+            <img
+              src={require(`../../assets/logos/lembaga-vokasi/${src}`)}
+              alt="dpm ui"
+              className="lembaga-lembaga__img"
+            />
+          </div>
+          <div className="lembaga-lembaga__nama-lembaga">
+            <span>{nama}</span>
+          </div>
+        </div>
+      </Link>
+    </>
   );
 };
 
