@@ -38,16 +38,16 @@
 
 .petinggi {
   margin-top: 5rem;
-  width: min-content;
-
-  &:not(:last-child) {
-    margin-right: 6rem;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-gap: 2rem 0;
+    padding: 0 10rem;
   }
   &__img {
     height: 20rem;
@@ -98,6 +98,14 @@
 
   &__departement {
     width: max-content;
+    text-align: center;
     margin: 0 auto;
   }
+}
+
+.overview-lists {
+  text-align: left;
+  margin: 0 auto;
+  min-width: min-content;
+  max-width: max-content;
 }

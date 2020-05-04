@@ -1,11 +1,28 @@
 import React from 'react';
-// import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 
+import lembaga from '../../json/lembaga-vokasi.json';
+
 const LembagaVokasiDetailPage = () => {
-  // const { id } = useParams();
+  const { id } = useParams();
+
+  const lembagaFiltered = lembaga.filter((val) => val.id === id);
+  const data = lembagaFiltered[0];
+
+  console.log(data);
+
+  if (lembagaFiltered.length === 0) {
+    return (
+      <>
+        <p>Page not FOund</p>
+        <Link to="/">Back To Home</Link>
+      </>
+    );
+  }
+
   return (
     <>
       <Header color="navy" />
@@ -13,115 +30,83 @@ const LembagaVokasiDetailPage = () => {
         <section className="lembaga-detail__heroes">
           <img
             alt="logo"
-            src={require('../../assets/logos/lembaga-vokasi/hmrk-ui.jpg')}
+            src={require(`../../assets/logos/lembaga-vokasi/${data.logo}`)}
             className="lembaga-detail__logo"
           />
           <div className="lembaga-detail__caption">
-            <h1 className="lembaga-detail__name">HMRK UI</h1>
-            <h2 className="lembaga-detail__tagline">Bergerak Berkontribusi</h2>
+            <h1 className="lembaga-detail__name">{data.nama}</h1>
+            <h2 className="lembaga-detail__tagline">{data.tagline}</h2>
           </div>
         </section>
 
         <section className="lembaga-detail__overview">
-          <p className="text text-align-center">
-            Himpunan Mahasiswa Rumpun Kesehatan (HMRK) Vokasi UI adalah
-            organisasi mahasiswa vokasi rumpun kesehatan yang terdiri dari tiga
-            program studi, yaitu Administrasi Rumah Sakit, Fisioterapi, dan
-            Okupasi Terapi yang dijadikan sebagai wadah komunikasi antar
-            mahasiswa.
-          </p>
+          <p
+            dangerouslySetInnerHTML={{ __html: data.overview }}
+            className="text text-align-center"
+          ></p>
           <div className="petinggi__container">
-            <div className="petinggi">
-              <img
-                src={require('../../assets/images/lembaga-vokasi/hmrk-1.PNG')}
-                alt="petinggi"
-                className="petinggi__img"
-              />
-              <div className="petinggi__identitas">
-                <h3 className="petinggi__nama">
-                  Siapapun dia <br /> Jabatannya
-                </h3>
-                <h4 className="petinggi__jurusan">Rumpun Kesehatan 2018</h4>
+            {data.petinggi.map((orang) => (
+              <div key={orang.nama} className="petinggi">
+                <img
+                  src={require(`../../assets/images/lembaga-vokasi/${orang.foto}`)}
+                  alt="petinggi"
+                  className="petinggi__img"
+                />
+                <div className="petinggi__identitas">
+                  <h3 className="petinggi__nama">
+                    {orang.nama} <br /> {orang.jabatan}
+                  </h3>
+                  <h4 className="petinggi__jurusan">{orang.jurusan}</h4>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </section>
 
         <section className="pengurus">
+          <h1 className="heading-primary text-align-center mb-sm">
+            {data.sub_nama}
+          </h1>
           <div className="pengurus__ph">
-            <h5 className="pengurus__jabatan">Ketua Himpunan</h5>
-            <h6 className="pengurus__nama">Mufighani Robbiansyah S</h6>
+            {data.ph.map((orang) => (
+              <div key={orang.nama}>
+                <h5 className="pengurus__jabatan">{orang.jabatan}</h5>
+                <h6 className="pengurus__nama mb-xs">{orang.nama}</h6>
+              </div>
+            ))}
           </div>
           <div className="pengurus__departements">
-            <div className="pengurus__departement">
-              <h3
-                style={{
-                  backgroundColor: 'white',
-                  color: 'var(--color-navy-1)',
-                  width: 'max-content',
-                  padding: '0rem 1rem'
-                }}
-                className="heading-tertiary"
-              >
-                NAMA DEPARTEMEN
-              </h3>
-              <div className="pengurus__pejabat">
-                <h5 className="pengurus__jabatan">Ketua Departemen</h5>
-                <h6 className="pengurus__nama">Kania Yosefin</h6>
+            {data.departments.map((department) => (
+              <div key={department.nama} className="pengurus__departement">
+                <h3
+                  style={{
+                    backgroundColor: 'white',
+                    color: 'var(--color-navy-1)',
+                    width: 'max-content',
+                    padding: '0rem 1rem'
+                  }}
+                  className="heading-tertiary"
+                >
+                  {department.nama}
+                </h3>
+                <div className="pengurus__pejabat">
+                  {department.petinggi.map((orang) => (
+                    <div key={orang.nama}>
+                      <h5 className="pengurus__jabatan">{orang.jabatan}</h5>
+                      <h6 className="pengurus__nama mb-sm">{orang.nama}</h6>
+                    </div>
+                  ))}
+                </div>
+                <div className="pengurus__staffs">
+                  <h5 className="pengurus__jabatan">Staff :</h5>
+                  {department.staff.map((nama) => (
+                    <h6 key={nama} className="pengurus__nama">
+                      {nama}
+                    </h6>
+                  ))}
+                </div>
               </div>
-              <div className="pengurus__staffs">
-                <h5 className="pengurus__jabatan">Staff :</h5>
-                <h6 className="pengurus__nama">Staff namanya siapa 1</h6>
-                <h6 className="pengurus__nama">Staff namanya siapa 2</h6>
-                <h6 className="pengurus__nama">Staff namanya siapa 3</h6>
-              </div>
-            </div>
-            <div className="pengurus__departement">
-              <h3
-                style={{
-                  backgroundColor: 'white',
-                  color: 'var(--color-navy-1)',
-                  width: 'max-content',
-                  padding: '0rem 1rem'
-                }}
-                className="heading-tertiary"
-              >
-                NAMA DEPARTEMEN
-              </h3>
-              <div className="pengurus__pejabat">
-                <h5 className="pengurus__jabatan">Ketua Departemen</h5>
-                <h6 className="pengurus__nama">Kania Yosefin</h6>
-              </div>
-              <div className="pengurus__staffs">
-                <h5 className="pengurus__jabatan">Staff :</h5>
-                <h6 className="pengurus__nama">Staff namanya siapa 1</h6>
-                <h6 className="pengurus__nama">Staff namanya siapa 2</h6>
-                <h6 className="pengurus__nama">Staff namanya siapa 3</h6>
-              </div>
-            </div>
-            <div className="pengurus__departement">
-              <h3
-                style={{
-                  backgroundColor: 'white',
-                  color: 'var(--color-navy-1)',
-                  width: 'max-content',
-                  padding: '0rem 1rem'
-                }}
-                className="heading-tertiary"
-              >
-                NAMA DEPARTEMEN
-              </h3>
-              <div className="pengurus__pejabat">
-                <h5 className="pengurus__jabatan">Ketua Departemen</h5>
-                <h6 className="pengurus__nama">Kania Yosefin</h6>
-              </div>
-              <div className="pengurus__staffs">
-                <h5 className="pengurus__jabatan">Staff :</h5>
-                <h6 className="pengurus__nama">Staff namanya siapa 1</h6>
-                <h6 className="pengurus__nama">Staff namanya siapa 2</h6>
-                <h6 className="pengurus__nama">Staff namanya siapa 3</h6>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
       </main>

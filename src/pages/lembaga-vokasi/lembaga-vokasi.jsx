@@ -12,53 +12,53 @@ const LembagaVokasiPage = () => {
   const lembaga_lembaga = [
     {
       name: 'DPM VOKASI UI',
-      fileName: 'dpm-ui.jpg',
-      url: 'dpm-vokasi-ui'
+      url: 'dpm-vokasi-ui',
+      fileName: 'logo-01.png'
     },
     {
       name: 'BEM VOKASI UI',
-      fileName: 'bem-vokasi-ui.png',
-      url: 'bem-vokasi-ui'
+      url: 'bem-vokasi-ui',
+      fileName: 'logo-02.png'
     },
     {
       name: 'HIMRA UI',
-      fileName: 'himra-ui.jpg',
-      url: 'himra-ui'
+      url: 'himra-ui',
+      fileName: 'logo-03.png'
     },
     {
       name: 'HIM ADM UI',
-      fileName: 'him-adm-ui.jpg',
-      url: 'him-adm-ui'
+      url: 'him-adm-ui',
+      fileName: 'logo-04.png'
     },
     {
       name: 'HMVA UI',
-      fileName: 'hmva-ui.jpg',
-      url: 'hmva-ui'
+      url: 'hmva-ui',
+      fileName: 'logo-05.png'
     },
     {
       name: 'IMPERATIF UI',
-      fileName: 'imperatif-ui.jpg',
-      url: 'imperatif-ui'
+      url: 'imperatif-ui',
+      fileName: 'logo-06.png'
     },
     {
       name: 'HM VOKHUM UI',
-      fileName: 'hm-vokhum-ui.jpg',
-      url: 'hm-vokhum-ui'
+      url: 'hm-vokhum-ui',
+      fileName: 'logo-07.png'
     },
     {
       name: 'HMRK UI',
-      fileName: 'hmrk-ui.jpg',
-      url: 'hmrk-ui'
+      url: 'hmrk-ui',
+      fileName: 'logo-08.png'
     },
     {
       name: 'HIMTA UI',
-      fileName: 'himta-ui.jpg',
-      url: 'himta-ui'
+      url: 'himta-ui',
+      fileName: 'logo-09.png'
     },
     {
       name: 'HMPM UI',
-      fileName: 'hmpm-ui.jpg',
-      url: 'hmpm-ui'
+      url: 'hmpm-ui',
+      fileName: 'logo-10.png'
     }
   ];
 
@@ -85,7 +85,12 @@ const LembagaVokasiPage = () => {
           >
             <div className="lembaga-lembaga__container">
               {lembaga_lembaga.map(({ name, fileName, url }) => (
-                <LembagaVokasiCard nama={name} src={fileName} url={url} />
+                <LembagaVokasiCard
+                  key={url}
+                  nama={name}
+                  src={fileName}
+                  url={url}
+                />
               ))}
             </div>
           </section>

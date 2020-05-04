@@ -4,7 +4,14 @@ import { Link } from 'react-router-dom';
 const LembagaVokasiCard = ({ nama, src, url }) => {
   return (
     <>
-      <Link style={{ textDecoration: 'none' }} to={`/lembaga-vokasi-ui/${url}`}>
+      <Link
+        style={{ textDecoration: 'none' }}
+        to={
+          url === 'bem-vokasi-ui'
+            ? '/profil-organisasi'
+            : `/lembaga-vokasi-ui/${url}`
+        }
+      >
         <div className="lembaga-lembaga__card">
           <div className="lembaga-lembaga__img-container">
             <img

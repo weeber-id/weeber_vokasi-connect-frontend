@@ -1,0 +1,774 @@
+[
+  {
+    "id": "dpm-vokasi-ui",
+    "nama": "DPM VOKASI UI",
+    "tagline": "Progresif dan Independen",
+    "logo": "logo-01.png",
+    "overview": "DPM Program Vokasi UI adalah Dewan Perwakilan Mahasiswa Program Vokasi Universitas Indonesia. DPM Program Vokasi UI adalah lembaga kemahasiswaan tertinggi di dalam IKM Program Vokasi UI. DPM Program Vokasi UI menjalankan fungsi legislatif, yudikatif, dan pengawasan serta memegang fungsi anggaran dan audit keuangan. Anggota DPM Program Vokasi UI diresmikan oleh DPM Program Vokasi UI periode satu tahun sebelumnya.",
+    "petinggi": [
+      {
+        "nama": "Hendri Eka Septiana",
+        "jabatan": "Ketua Umum",
+        "jurusan": "Rumpun Kesehatan 2018",
+        "foto": "foto-01.png"
+      },
+      {
+        "nama": "Intan Ronanda",
+        "jabatan": "Wakil Ketua 1",
+        "jurusan": "Akuntansi 2018",
+        "foto": "foto-02.png"
+      },
+      {
+        "nama": "Maulana Iqbal T.",
+        "jabatan": "Wakil Ketua 2",
+        "jurusan": "Manajemen Rekod dan Arsip 2018",
+        "foto": "foto-03.png"
+      }
+    ],
+    "sub_nama": "DPM VOKASI UI 2020",
+    "ph": [
+      {
+        "nama": "Hendri Eka Septiana",
+        "jabatan": "Ketua Umum"
+      },
+      {
+        "nama": "Intan Ronanda",
+        "jabatan": "Wakil Ketua 1"
+      },
+      {
+        "nama": "Maulana Iqbal T.",
+        "jabatan": "Wakil Ketua 2"
+      },
+      {
+        "nama": "Dimas Alif Pradifta",
+        "jabatan": "Sekretaris Jenderal"
+      },
+      {
+        "nama": "Nida Nailah",
+        "jabatan": "Bendahara Umum"
+      }
+    ],
+    "departments": [
+      {
+        "nama": "KOMISI HUKUM",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Komisi",
+            "nama": "Anggie Eka J."
+          },
+          {
+            "jabatan": "Wakil Ketua Komisi 1",
+            "nama": "Faristya Suryani"
+          },
+          {
+            "jabatan": "Wakil Ketua Komisi 2",
+            "nama": "Finawati"
+          }
+        ],
+        "staff": [
+          "Rizka Putri Aji",
+          "Avisa Herliani",
+          "Fainah",
+          "Elvis Bau Engo",
+          "Ghazi Apta Pratama"
+        ]
+      },
+      {
+        "nama": "KOMISI KELEMBAGAAN",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Komisi",
+            "nama": "Dhiya Nabillah"
+          },
+          {
+            "jabatan": "Wakil Ketua Komisi 1",
+            "nama": "Ummi Aulia"
+          },
+          {
+            "jabatan": "Wakil Ketua Komisi 2",
+            "nama": "Shelby Dhoz Basnet"
+          }
+        ],
+        "staff": [
+          "Annisa Azzahra",
+          "Ardhaninditya Brahmana",
+          "Devina Aulia Rahma",
+          "Aura Zafira",
+          "Wildania Nugrahedy"
+        ]
+      },
+      {
+        "nama": "KOMISI PENGAWASAN",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Komisi",
+            "nama": "Aulia Raamadhani WSK"
+          },
+          {
+            "jabatan": "Wakil Ketua Komisi 1",
+            "nama": "M. Rafiel Zarin Arifin"
+          },
+          {
+            "jabatan": "Wakil Ketua Komisi 2",
+            "nama": "Idham Affandi"
+          }
+        ],
+        "staff": [
+          "M. Fadil Hidayatullah",
+          "Renanda Diva AJH",
+          "M. Rassya Saputra",
+          "Laureta Kusuma Lestar",
+          "Raisa Tantri Wibisono",
+          "Fairuz Khalilurrahman Y",
+          "Farras Rizki Muzhaffar",
+          "Fauzan Azhar"
+        ]
+      },
+      {
+        "nama": "DIVISI LITBANG",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Divisi",
+            "nama": "Sekaringtyas Widyasari"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 1",
+            "nama": "Meylia Geva Arvina"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 2",
+            "nama": "Khoirunnisa"
+          }
+        ],
+        "staff": ["Azhaar Mumtaz", "Andira Sekar"]
+      },
+      {
+        "nama": "DIVISI KEUANGAN",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Divisi",
+            "nama": "Lisniat Daeli"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 1",
+            "nama": "Ratu Rania"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 2",
+            "nama": "Anisa Vatika Sari"
+          }
+        ],
+        "staff": [
+          "Elshifa Tasya Hanifah",
+          "Adila Kartami Putri",
+          "Ghina Fauziah"
+        ]
+      },
+      {
+        "nama": "DIVISI KESTARI",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Divisi",
+            "nama": "Elitania Farah Aprilia"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 1",
+            "nama": "Dhira Rahma Fadila"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 2",
+            "nama": "Alifia Azzahra Putri"
+          }
+        ],
+        "staff": [
+          "Amy Rahma Maulani",
+          "Bunga Febri Nurfajrianti",
+          "Acerine Blanda Erantha"
+        ]
+      },
+      {
+        "nama": "DIVISI PSDM",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Divisi",
+            "nama": "Rani Damayanti"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 1",
+            "nama": "Fathin Syuhaila"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 2",
+            "nama": "Yvonne Maura"
+          }
+        ],
+        "staff": ["Asby Rahma Az Zahra", "M. Ichsan Brilianto", "Hudan Rasip"]
+      },
+      {
+        "nama": "DIVISI KOMINFO",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Divisi",
+            "nama": "Karina Annisa Shafa"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 1",
+            "nama": "Aretha Allyssha A"
+          },
+          {
+            "jabatan": "Wakil Ketua Divisi 2",
+            "nama": "Rr. Fauziah Cantikasari"
+          }
+        ],
+        "staff": [
+          "Rista Nurfajrianti",
+          "Karina Myline",
+          "Sharfina Hanifaturrahman",
+          "Haning Hapsari"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "himra-ui",
+    "nama": "HIMRA UI",
+    "tagline": "Satu Tekad Ciptakan Karya",
+    "logo": "logo-03.png",
+    "overview": "Himpunan Mahasiswa Manajemen Rekod Dan Arsip Universitas Indonesia adalah lembaha kemahasiswaan di dalam IKM Vokasi UI dimana merupakan  wadah bagi mahasiswa dalam pengembangan minat dan bakat dengan sikap kolaboratif, kontributif serta inovatif dengan semangat kekeluargaan untuk mencapai tujuan bersama dengan cara : <br><br> <ol class='overview-lists'><li>Menampung dan menyalurkam aspirasi mahasiswa dalam segala bidang demi kemajuan bersama</li><li>Menjadikan himpunan sebagai sarana untuk meningkatkan minat dan bakat mahasiswa </li><li>Menyelenggarakan berbagai program kerja yang produktif, kreatif, serta menambah wawasan mahasiswa dalam berorganisasi</li><li>Meningkatkan pengabdian HIMRA UI di dalam Kehidupan masyarakat demi terwujudnya Tri Darma Perguruan Tinggi</li><li>Membangun koordinasi yang aktif dan berkesinambungan di dalam maupun di luar HIMRA UI</li><li>Meningkatkan kebersamaan dan kekeluargaan di dalam internal HIMRA UI</li></ol>",
+    "departments": [
+      {
+        "nama": "DEPARTEMEN PSDM",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Anantya Febrian"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen I",
+            "nama": "Amanda Instiqomah"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen II",
+            "nama": "Putri Herlita Pramesthi"
+          }
+        ],
+        "staff": [
+          "Rifdah Amalia",
+          "Evalia Syarifah",
+          "Aisyah Nur Aini Sampurno",
+          "Ivana Desidera"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN SENI BUDAYA",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "M Rafi Rizqullah"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen I",
+            "nama": "Nabila Nur Afifah"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen II",
+            "nama": "Kresna Firdaus Wiranata"
+          }
+        ],
+        "staff": [
+          "Chatelya Shania Karim S",
+          "Laura Putri Salsabila",
+          "Fadhil Omar Pratama",
+          "Daffa Permana Putra",
+          "Miftahul Fajarudin"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN K&I",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "M. Ihsan Fakhri"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen I",
+            "nama": "Anata Brima Yoga"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen II",
+            "nama": "Arvia Earwantama"
+          }
+        ],
+        "staff": ["M. Defa Athoillah", "Diandra Oktavia"]
+      },
+      {
+        "nama": "DEPARTEMEN SOSMAS",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Daffa Farly Azhari"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen I",
+            "nama": "Wildan Zico Armando"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen II",
+            "nama": "M. Fathi Khairan Bisma"
+          }
+        ],
+        "staff": ["Haykal Alfarisi", "Aisyah Salsabila", "Annisa Rosiasna"]
+      },
+      {
+        "nama": "DEPARTEMEN KEUANGAN",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Sofa Nur Habiba"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Aura Maharani"
+          }
+        ],
+        "staff": [
+          "Octavia Cahya Antika",
+          "Istifaiyah",
+          "Prilita Sarah Lutfianty",
+          "Fakhria Savina"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN KEMAHA",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Fauzi Rahman Ariatama"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen I",
+            "nama": "Syifa Nadhira"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen II",
+            "nama": "M. Hibban Salda"
+          }
+        ],
+        "staff": [
+          "Rizka Eliafiana",
+          "Shantiara Ayu F",
+          "Akbar Alfhargani",
+          "Jonatan Ramos"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN OLAHRAGA",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Nurfadillah Ramadhan"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen I",
+            "nama": "Dhara Rizky Fakhira"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen II",
+            "nama": "Naufal Al Daffa"
+          }
+        ],
+        "staff": [
+          "Laxmi Angguningtyas",
+          "Naufal Afra Munis",
+          "Sellania Ivana Putri",
+          "Siska Dyah Ayuka Sari",
+          "Fayyadh Ahnaf Gamal",
+          "Nabila Frithania",
+          "Jeremy Alvredo",
+          "Fachrezi Bhayu Putra",
+          "Wijaya Hadi Rusnandi",
+          "Jihan Calista",
+          "Rosifah Amalia"
+        ]
+      }
+    ],
+    "petinggi": [
+      {
+        "nama": "Annas Rizka Maulana",
+        "jabatan": "Ketua Himpunan",
+        "foto": "foto-04.png",
+        "jurusan": "MRA 2018"
+      },
+      {
+        "nama": "Ghufron Murtadho",
+        "jabatan": "Wakil Ketua Himpunan",
+        "foto": "foto-05.png",
+        "jurusan": "MRA 2018"
+      }
+    ],
+    "ph": [
+      {
+        "nama": "Annas Rizka Maulana",
+        "jabatan": "Ketua Himpunan"
+      },
+      {
+        "nama": "Ghufron Murtadho",
+        "jabatan": "Wakil Ketua Himpunan"
+      },
+      {
+        "nama": "Hanna Resika",
+        "jabatan": "Sekretaris I"
+      },
+      {
+        "nama": "Adila Qotrunada",
+        "jabatan": "Sekretaris II"
+      },
+      {
+        "nama": "Ni Putu Putri DA",
+        "jabatan": "Bendahara I"
+      },
+      {
+        "nama": "Rimada Virasma D",
+        "jabatan": "Bendahara II"
+      }
+    ],
+    "sub_nama": "HIMRA UI 2020"
+  },
+  {
+    "id": "him-adm-ui",
+    "nama": "HIM ADM UI",
+    "tagline": "More Than A Unity",
+    "logo": "logo-04.png",
+    "overview": "Himpunan Administrasi adalah wadah bagi mahasiwa administrasi dalam menyampaikan aspirasi dan menyalurkan minat bakat dari mahasiswa administrasi. Selain itu himpunan administrasi juga membantu program studi administrasi dalam mengembangkan kemampuan mahasiswa administrasi dibidang akademis maupun non akademis.<br><br>Himpunan administrasi ini terdiri dari 4 program studi, yaitu administrasi asuransi dan aktuaria, administrasi perpajakan, administrasi keuangan dan perbankan dan administrasi perkantoran.<br><br>Himpunan administrasi menjunjung tinggi rasa kekeluargaan dan mengedepankan keharmonisan hubungan antara satu dengan yg lainnya. Nilai cinta dan kekeluargaan menjadi modal utama bagi mahasiwa administrasi dalam menjalankan setiap program kerja.",
+    "departments": [
+      {
+        "nama": "DEPARTEMEN INTERNAL",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Ariefirasyah Tridipa Mannaroy"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Muhammad Fadhil"
+          },
+          {
+            "jabatan": "Staff Ahli",
+            "nama": "Syafira Amalia"
+          }
+        ],
+        "staff": [
+          "Nibrasomeigo E. G",
+          "Safira Rachim",
+          "Shafa Aisya Putri",
+          "Aditya Avianti Ivah"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN KEUANGAN",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Syifa Putri Baina Hermawan"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Christin Natalia"
+          }
+        ],
+        "staff": [
+          "Muhammad Anwar I",
+          "Annisa Putri Kurniati",
+          "Alodiazada Nurhida D.",
+          "Suryani Roro Anggini",
+          "Rizqina Farhana Siraz",
+          "Salsabila Dwi Iranti"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN OLAHRAGA",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Rayhan Galih Kamajaya"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Arya Rizkynanda Mulya"
+          },
+          {
+            "jabatan": "Staff Ahli",
+            "nama": "Anggun Maysti Irkhamni"
+          }
+        ],
+        "staff": [
+          "Raissa Alifia Safitri",
+          "Amirah",
+          "Keyzia Aulia Humaira",
+          "Ellisa Ade Yunita",
+          "Daffa Irsyaad Rafiriswaji",
+          "Muhammad Daffa Rizky",
+          "Steven Reinaldo",
+          "Renno Muhammad",
+          "Adriel Oby",
+          "Hafizh Kamil"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN SOSIAL",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Mohammad Fajar Falaq"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Yuliana Fitriani"
+          }
+        ],
+        "staff": [
+          "Rasyid Putra",
+          "Annisa Elvina",
+          "Aura Alifia",
+          "Fanfarra Tabitha",
+          "Firsya Rahmadalni",
+          "Tasya Berlianna",
+          "Nilova Latifa",
+          "Binsar Taufik",
+          "Anisa Nusantari",
+          "Dewi Safitri",
+          "Syifa Syauqiyah",
+          "Safira Charin"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN PEMKAR",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Muhammad Ikhsan"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Rosaenna Syahfitri"
+          }
+        ],
+        "staff": [
+          "Hana Kartika Nurhaliza",
+          "Muhammad Yusuf M",
+          "Firstka Yr Angelina",
+          "Muhammad Aqslan F",
+          "Muhammad Akrom",
+          "Annisa Sekar Ayu Arisy",
+          "Nisrina Ardiani",
+          "Tasya Abiyah F",
+          "Aishah Hasnia",
+          "Vinca R"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN SENI BUDAYA",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Bethandi Oktovino Hendarta"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Ibnu Vierianto"
+          }
+        ],
+        "staff": [
+          "Afwan Syaifur Rohim",
+          "Salsabila Fitri Yasdiona",
+          "Juliana Patricia Ferine",
+          "Fachrie Fahd Fauzan",
+          "Zahra Wahyuningrum",
+          "Devina Meiliana",
+          "Dira Azalia S.",
+          "Sharly Widya"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN P&K",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Mikhael Tuamro Siagian"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Rafiriko Siagian"
+          }
+        ],
+        "staff": [
+          "Mahsa Hisanah Dalilah",
+          "Nova Violita Marpaung",
+          "Alifia Syarifa Zahra",
+          "Muhammad Akbar A",
+          "Melani Kasih Romaito",
+          "Rezky Amalia Putri",
+          "Aulia Akbar"
+        ]
+      },
+      {
+        "nama": "DEPARTEMEN KOMINFO",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": "Bariq Anugrah Rahman"
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": "Piokta Soritua Hutahaean"
+          },
+          {
+            "jabatan": "Staff Ahli",
+            "nama": "Daniar Pandu Dewantoro"
+          }
+        ],
+        "staff": [
+          "Muhammad Ramadhan",
+          "Putri Isnaini",
+          "Marchyafarra Hafidz",
+          "Raden Salsabillah E",
+          "Riananda Dayanti",
+          "Aisy Khairunnisa",
+          "Windri Nabila Safitri"
+        ]
+      },
+      {
+        "nama": "KOORDINATOR",
+        "petinggi": [
+          {
+            "jabatan": "Koordinator AKT",
+            "nama": "Muhammad Alif Belva Nurvi"
+          },
+          {
+            "jabatan": "Koordinator APS",
+            "nama": "Andika Martin"
+          },
+          {
+            "jabatan": "Koordinator Pajak",
+            "nama": "Rifky Rahman Hakim"
+          },
+          {
+            "jabatan": "Koordinator Bank",
+            "nama": "Fauzan Abi Rafdi"
+          }
+        ],
+        "staff": [
+          "Genta Sukma Buana",
+          "Fairuz Rafif",
+          "Nicholas Giovanni",
+          "Dennis Simanjuntak"
+        ]
+      }
+    ],
+    "petinggi": [
+      {
+        "nama": "Andika Kurniawan",
+        "jabatan": "Ketua Himpunan",
+        "foto": "foto-06.png",
+        "jurusan": "Administrasi 2018"
+      },
+      {
+        "nama": "Daniel Bernard",
+        "jabatan": "Wakil Ketua Himpunan",
+        "foto": "foto-07.png",
+        "jurusan": "Administrasi 2018"
+      }
+    ],
+    "ph": [
+      {
+        "nama": "Andika Kurniawan",
+        "jabatan": "Ketua Himpunan"
+      },
+      {
+        "nama": "Daniel Bernard Kristian",
+        "jabatan": "Wakil Ketua Himpunan"
+      },
+      {
+        "nama": "Devi Lestari Prihatiningsih",
+        "jabatan": "Sekretaris I"
+      },
+      {
+        "nama": "Jasmine Fitasya Herza",
+        "jabatan": "Sekretaris II"
+      },
+      {
+        "nama": "Annisa Dwi Novianti",
+        "jabatan": "Bendahara I"
+      },
+      {
+        "nama": "Siti Khodijah",
+        "jabatan": "Bendahara II"
+      }
+    ],
+    "sub_nama": "HIM ADM UI 2020"
+  },
+  {
+    "id": "",
+    "nama": "",
+    "tagline": "",
+    "logo": "logo-04.png",
+    "overview": "",
+    "departments": [
+      {
+        "nama": "",
+        "petinggi": [
+          {
+            "jabatan": "Ketua Departemen",
+            "nama": ""
+          },
+          {
+            "jabatan": "Wakil Ketua Departemen",
+            "nama": ""
+          }
+        ],
+        "staff": []
+      }
+    ],
+    "petinggi": [
+      {
+        "nama": "",
+        "jabatan": "Ketua Himpunan",
+        "foto": "foto-06.png",
+        "jurusan": "Administrasi 2018"
+      },
+      {
+        "nama": "",
+        "jabatan": "Wakil Ketua Himpunan",
+        "foto": "foto-07.png",
+        "jurusan": "Administrasi 2018"
+      }
+    ],
+    "ph": [
+      {
+        "nama": "",
+        "jabatan": "Ketua Himpunan"
+      },
+      {
+        "nama": "",
+        "jabatan": "Wakil Ketua Himpunan"
+      },
+      {
+        "nama": "",
+        "jabatan": "Sekretaris I"
+      },
+      {
+        "nama": "",
+        "jabatan": "Sekretaris II"
+      },
+      {
+        "nama": "",
+        "jabatan": "Bendahara I"
+      },
+      {
+        "nama": "",
+        "jabatan": "Bendahara II"
+      }
+    ],
+    "sub_nama": " UI 2020"
+  }
+]
