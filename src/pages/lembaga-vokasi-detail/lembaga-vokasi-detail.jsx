@@ -83,7 +83,8 @@ const LembagaVokasiDetailPage = () => {
                     backgroundColor: 'white',
                     color: 'var(--color-navy-1)',
                     width: 'max-content',
-                    padding: '0rem 1rem'
+                    padding: '0rem 1rem',
+                    margin: '0 auto'
                   }}
                   className="heading-tertiary"
                 >
@@ -98,7 +99,10 @@ const LembagaVokasiDetailPage = () => {
                   ))}
                 </div>
                 <div className="pengurus__staffs">
-                  <h5 className="pengurus__jabatan">Staff :</h5>
+                  {id === 'imperatif-ui' || id === 'hmpm-ui' ? null : (
+                    <h5 className="pengurus__jabatan">Staff :</h5>
+                  )}
+
                   {department.staff.map((nama) => (
                     <h6 key={nama} className="pengurus__nama">
                       {nama}

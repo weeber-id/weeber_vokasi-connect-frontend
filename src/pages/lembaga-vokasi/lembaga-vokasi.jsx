@@ -83,7 +83,11 @@ const LembagaVokasiPage = () => {
           <section
             className={`lembaga-lembaga ${isCollapse ? 'collapse' : null}`}
           >
-            <div className="lembaga-lembaga__container">
+            <div
+              className={`lembaga-lembaga__container ${
+                isCollapse ? '' : 'show'
+              }`}
+            >
               {lembaga_lembaga.map(({ name, fileName, url }) => (
                 <LembagaVokasiCard
                   key={url}
@@ -100,7 +104,9 @@ const LembagaVokasiPage = () => {
             }}
             className="lihat-selengkapnya"
           >
-            <span>{isCollapse ? 'Lihat Selengkapnya' : 'Lebih Sedikit'}</span>
+            <span>
+              {isCollapse ? 'Lihat Selengkapnya' : 'Lihat Lebih Sedikit'}
+            </span>
           </div>
         </div>
       </main>
