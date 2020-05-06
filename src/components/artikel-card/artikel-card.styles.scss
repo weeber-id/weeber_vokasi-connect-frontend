@@ -1,30 +1,93 @@
 .artikel-card {
   width: 25rem;
   border-radius: 5px;
-  overflow: hidden;
-  height: 35rem;
+  height: 40rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding-bottom: 3rem;
+  cursor: pointer;
+
+  @keyframes colorChange {
+    0% {
+      background-color: var(--color-light-grey-1);
+    }
+
+    50% {
+      background-color: var(--color-light-grey-3);
+    }
+
+    100% {
+      background-color: var(--color-light-grey-1);
+    }
+  }
 
   &__thumbnail {
     height: 15rem;
-    background-color: blanchedalmond;
+    background-color: var(--color-light-blue-1);
+
+    &--skeleton {
+      animation: colorChange 2s infinite;
+    }
+  }
+
+  @mixin text-skeleton($width, $height) {
+    height: $height;
+    width: $width;
+
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
 
   &__title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.4rem;
+    line-height: 130%;
+
+    &--skeleton-1 {
+      @include text-skeleton(100%, 3rem);
+    }
+
+    &--skeleton-2 {
+      @include text-skeleton(50%, 3rem);
+      margin-bottom: 2rem;
+    }
   }
 
   &__preview {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   &__date {
     font-size: 1.2rem;
     color: #bbb;
+    margin-bottom: 0.5rem;
+
+    &--skeleton {
+      @include text-skeleton(40%, 2rem);
+      margin-bottom: 2rem;
+    }
   }
 
   &__content {
     font-size: 1.2rem;
     color: #bbb;
+  }
+
+  &__text-skeleton {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    &--1 {
+      @include text-skeleton(100%, 1.2rem);
+    }
+
+    &--2 {
+      @include text-skeleton(80%, 1.2rem);
+    }
+
+    &--3 {
+      @include text-skeleton(60%, 1.2rem);
+    }
   }
 }

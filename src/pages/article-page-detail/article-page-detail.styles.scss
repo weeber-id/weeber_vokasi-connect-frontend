@@ -1,0 +1,9 @@
+.artikel-detail {
+  padding: 2rem 5rem;
+
+  &__cover {
+    height: 50vh;
+    background-color: var(--color-light-grey-1);
+    margin-top: 8rem;
+  }
+}

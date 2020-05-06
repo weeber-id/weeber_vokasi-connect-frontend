@@ -12,8 +12,6 @@ const LembagaVokasiDetailPage = () => {
   const lembagaFiltered = lembaga.filter((val) => val.id === id);
   const data = lembagaFiltered[0];
 
-  console.log(data);
-
   if (lembagaFiltered.length === 0) {
     return (
       <>
@@ -29,7 +27,7 @@ const LembagaVokasiDetailPage = () => {
       <main className="lembaga-detail">
         <section className="lembaga-detail__heroes">
           <img
-            alt="logo"
+            alt={`logo ${data.nama}`}
             src={require(`../../assets/logos/lembaga-vokasi/${data.logo}`)}
             className="lembaga-detail__logo"
           />
@@ -43,13 +41,13 @@ const LembagaVokasiDetailPage = () => {
           <p
             dangerouslySetInnerHTML={{ __html: data.overview }}
             className="text text-align-center"
-          ></p>
+          />
           <div className="petinggi__container">
             {data.petinggi.map((orang) => (
               <div key={orang.nama} className="petinggi">
                 <img
                   src={require(`../../assets/images/lembaga-vokasi/${orang.foto}`)}
-                  alt="petinggi"
+                  alt={`foto ${orang.nama}`}
                   className="petinggi__img"
                 />
                 <div className="petinggi__identitas">
