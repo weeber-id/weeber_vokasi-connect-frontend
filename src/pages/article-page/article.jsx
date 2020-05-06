@@ -7,8 +7,9 @@ import Footer from '../../components/footer/footer';
 import ArtikelCard from '../../components/artikel-card/artikel-card';
 
 const ArticlePage = () => {
-  const [articles, setArticles] = useState(['']);
+  const [articles, setArticles] = useState([{ id: '' }]);
   const [isLoading, setLoading] = useState(true);
+  const [isError, setError] = useState(false);
 
   useEffect(() => {
     const url = 'http://35.240.223.151:8003';
@@ -20,14 +21,16 @@ const ArticlePage = () => {
         setArticles(data.data);
         // setTimeout(() => {
         setLoading(false);
+        setError(false);
         // }, 1000);
       })
-      .then((err) => {
+      .catch((err) => {
         console.log(err);
+        setError(true);
       });
 
     return () => {
-      setArticles([]);
+      setArticles([{ id: '' }]);
       setLoading(false);
     };
   }, []);
@@ -58,8 +61,10 @@ const ArticlePage = () => {
               <ArtikelCard type="skeleton" />
               <ArtikelCard type="skeleton" />
             </>
+          ) : isError ? (
+            <span>Oops Error</span>
           ) : (
-            articles.map((article) => (
+            articles?.map((article) => (
               <>
                 <Link
                   style={{ textDecoration: 'none', color: 'inherit' }}

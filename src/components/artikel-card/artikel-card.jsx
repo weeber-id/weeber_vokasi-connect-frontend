@@ -8,8 +8,8 @@ const ArtikelCard = ({
 }) => {
   let slicedContent = content;
 
-  if (content.length > 150) {
-    slicedContent = slicedContent.slice(0, 149) + '...';
+  if (content.length > 300) {
+    slicedContent = slicedContent.slice(0, 299) + '...';
   }
 
   const date = new Date(date_created);
@@ -49,6 +49,7 @@ const ArtikelCard = ({
           className="artikel-card__content"
         />
       </div>
+      <h4 className="artikel-card__cta">Lihat Selengkapnya &rarr;</h4>
     </div>
   );
 };

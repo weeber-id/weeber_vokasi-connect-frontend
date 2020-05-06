@@ -10,10 +10,12 @@ import HomePage from './pages/homepage/homepage';
 import EventPage from './pages/event-page/event-page';
 import LembagaVokasiPage from './pages/lembaga-vokasi/lembaga-vokasi';
 import LembagaVokasiDetailPage from './pages/lembaga-vokasi-detail/lembaga-vokasi-detail';
+import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Route exact path="/" component={HomePage} />
       <Route exact path="/event" component={EventPage} />
       <Route exact path="/info-vokasi/triumph-of-spartan" component={Triumph} />

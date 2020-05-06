@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import Header from '../../components/header/header';
 import Button from '../../components/button/button';
@@ -21,6 +21,7 @@ const HomePage = () => {
   });
 
   const { nama, npm, prodi, hp, keluhan } = state;
+  const aspirasiRef = useRef(null);
 
   const handleChange = (event) => {
     const { value, name } = event.target;
@@ -28,6 +29,40 @@ const HomePage = () => {
       ...state,
       [name]: value
     });
+  };
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: aspirasiRef.current.scrollHeight,
+      behavior: 'smooth'
+    });
+  };
+
+  const submitForm = () => {
+    const url = 'http://35.240.223.151:8003';
+
+    const body = JSON.stringify({
+      nama,
+      npm,
+      prodi,
+      no_hp: hp,
+      keluhan
+    });
+
+    fetch(`${url}/aspiration`, {
+      method: 'POST',
+      body,
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then((res) => res.text())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
@@ -42,7 +77,9 @@ const HomePage = () => {
               Selamat datang! <br /> Mari berjejaring bersama di <br />
               <span>Vokasi Connect</span>
             </h1>
-            <Button className="mt-sm">Telusuri Lebih Jauh</Button>
+            <Button onClick={handleClick} className="mt-sm">
+              Telusuri Lebih Jauh
+            </Button>
           </div>
           <div className="heroes__picture">
             <Beranda1 />
@@ -92,14 +129,14 @@ const HomePage = () => {
 
         {/* Section Aspiration Form */}
 
-        <section className="form-aspirasi">
+        <section ref={aspirasiRef} className="form-aspirasi">
           <h1
             style={{ color: 'white' }}
             className="heading-primary text-align-center mb-sm"
           >
             IKM VOKASI ASPIRATION CENTER
           </h1>
-          <form className="form-aspirasi__container">
+          <form onSubmit={submitForm} className="form-aspirasi__container">
             <InputForm
               value={nama}
               onChange={handleChange}
@@ -107,6 +144,7 @@ const HomePage = () => {
               type="text"
               name="nama"
               placeholder="Nama"
+              required={true}
             />
             <InputForm
               value={npm}
@@ -115,6 +153,7 @@ const HomePage = () => {
               type="text"
               name="npm"
               placeholder="NPM"
+              required={true}
             />
             <InputForm
               value={prodi}
@@ -123,6 +162,7 @@ const HomePage = () => {
               type="text"
               name="prodi"
               placeholder="Program Studi"
+              required={true}
             />
             <InputForm
               value={hp}
@@ -131,6 +171,7 @@ const HomePage = () => {
               type="tel"
               name="hp"
               placeholder="No.Hp"
+              required={true}
             />
             <InputForm
               value={keluhan}
@@ -139,10 +180,11 @@ const HomePage = () => {
               type="textarea"
               name="keluhan"
               placeholder="Tulis keluhanmu disini"
+              required={true}
             />
           </form>
           <div className="kurung">
-            <Button>KIRIM</Button>
+            <Button onClick={submitForm}>KIRIM</Button>
           </div>
         </section>
       </main>

@@ -1,24 +1,12 @@
 .artikel-card {
   width: 25rem;
   border-radius: 5px;
-  height: 40rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  padding-bottom: 3rem;
   cursor: pointer;
 
-  @keyframes colorChange {
-    0% {
-      background-color: var(--color-light-grey-1);
-    }
-
-    50% {
-      background-color: var(--color-light-grey-3);
-    }
-
-    100% {
-      background-color: var(--color-light-grey-1);
-    }
+  &:hover &__cta {
+    color: var(--color-navy-1);
   }
 
   &__thumbnail {
@@ -28,15 +16,6 @@
     &--skeleton {
       animation: colorChange 2s infinite;
     }
-  }
-
-  @mixin text-skeleton($width, $height) {
-    height: $height;
-    width: $width;
-
-    animation-name: colorChange;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
   }
 
   &__title {
@@ -56,6 +35,26 @@
 
   &__preview {
     padding: 1.5rem;
+    height: 22rem;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 5;
+      background: linear-gradient(180deg, transparent 70%, rgba(white, 1));
+    }
+  }
+
+  &__cta {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--color-light-blue-1);
   }
 
   &__date {

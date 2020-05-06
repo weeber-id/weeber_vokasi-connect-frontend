@@ -16,7 +16,7 @@ const LembagaVokasiCard = ({ nama, src, url }) => {
           <div className="lembaga-lembaga__img-container">
             <img
               src={require(`../../assets/logos/lembaga-vokasi/${src}`)}
-              alt="dpm ui"
+              alt={`logo ${nama}`}
               className="lembaga-lembaga__img"
             />
           </div>
