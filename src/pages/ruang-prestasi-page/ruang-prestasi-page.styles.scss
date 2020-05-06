@@ -1,0 +1,86 @@
+.ruang-prestasi {
+  background-color: var(--color-green-1);
+  padding: 3rem 3rem;
+  padding-top: 0rem;
+  padding-left: 5rem;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__picture,
+  &__main {
+    width: 50%;
+    h1 {
+      font-size: 4rem;
+    }
+    span {
+      font-size: 7rem;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      align-items: flex-end;
+    }
+  }
+}
+
+.prestasi-table {
+  background-color: var(--color-green-1);
+  padding: 3rem 3rem;
+  padding-top: 0rem;
+  padding-left: 5rem;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prestasi {
+  background-color: var(--color-green-1);
+  max-height: 100rem;
+  overflow: hidden;
+  /*padding: repeat(4, 5rem);*/
+  padding-left: 20rem;
+  transition: all 1s linear;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  &__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    padding-left: 5rem;
+    padding: 3rem 5rem;
+  }
+
+  &.collapse {
+    padding: 0rem 5rem;
+    max-height: 0rem;
+  }
+}
+
+.lihat-selengkapnya {
+  padding: 3rem 5rem;
+  text-align: center;
+  background-color: var(--color-yellow-2);
+
+  & > span {
+    font-weight: bold;
+    color: var(--color-green-1);
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 3px solid var(--color-green-1);
+    border-radius: 20rem;
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--color-yellow-2);
+        color: var(--color-green-1);
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.tos-event-card-container {
+  display: grid;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.tos-event {
+  &__tambahan {
+    height: 8rem;
+    width: 100%;
+    background-color: var(--color-black-2);
+    align-items: flex-end;
+    margin-top: -1rem;
+  }
+}
+
+.tos-doc {
+  padding-left: 0rem;
+
+  &__container {
+    display: grid;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  }
+}
+
+.swiper {
+  position: relative;
+}
+.arrowTos {
+  @mixin arrow($deg) {
+    border-right: 0.8rem solid rgba(white, 0.5);
+    border-bottom: 0.8rem solid rgba(white, 0.5);
+    height: 3rem;
+    width: 3rem;
+    transform: rotate($deg) translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @media (hover: hover) {
+      &:hover {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-right: 1rem solid rgba(white, 0.7);
+        border-bottom: 1rem solid rgba(white, 0.7);
+      }
+    }
+  }
+
+  &__right {
+    @include arrow(-45deg);
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    z-index: 100;
+
+    @media only screen and (max-width: 800px) {
+      right: 25%;
+    }
+    @media only screen and (max-width: 480px) {
+      right: -5%;
+    }
+  }
+
+  &__left {
+    @include arrow(135deg);
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    z-index: 100;
+
+    @media only screen and (max-width: 800px) {
+      left: 25%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      left: -5%;
+    }
+  }
+}

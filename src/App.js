@@ -9,6 +9,7 @@ import HomePage from './pages/homepage/homepage';
 import EventPage from './pages/event-page/event-page';
 import Iseng from './pages/test-page/test-zhorif';
 import LembagaVokasiPage from './pages/lembaga-vokasi/lembaga-vokasi';
+import RuangPrestasi from './pages/ruang-prestasi-page/ruang-prestasi-page';
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/iseng" component={Iseng} />
       <Route exact path="/event" component={EventPage} />
+      <Route
+        exact
+        path="/info-vokasi/ruang-prestasi"
+        component={RuangPrestasi}
+      />
       <Route exact path="/info-vokasi/triumph-of-spartan" component={Triumph} />
       <Route path="/info-vokasi/info-prodi" component={ProdiPage} />
       <Route exact path="/test-page" component={TestPage} />

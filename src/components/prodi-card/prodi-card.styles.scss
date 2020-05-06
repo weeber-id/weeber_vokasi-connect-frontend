@@ -3,22 +3,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 5rem;
+  padding: 1rem 2rem;
   background-color: var(--color-light-grey-1);
   border-radius: 1rem;
   transition: transform 0.3s;
   transform: scale(0.8);
-  height: 20rem;
-  width: 30rem;
+  height: 30rem;
+  width: 35rem;
 
   &.active {
     transform: scale(1);
   }
 
-  &__img {
-    width: 7rem;
+  &__title {
+    width: 50%;
     height: auto;
-    justify-content: center;
-    align-items: flex-end;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  &__logo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-self: flex-end;
   }
 }

@@ -11,6 +11,12 @@
   &__picture,
   &__main {
     width: 50%;
+    h1 {
+      font-size: 4rem;
+    }
+    span {
+      font-size: 7rem;
+    }
 
     svg {
       width: 100%;
@@ -20,18 +26,22 @@
   }
 
   &__tambahan {
-    height: 4rem;
+    height: 8rem;
     width: 100%;
-    background-color: var(--color-navy-1);
+    background-color: var(--color-dark-grey-1);
     align-items: flex-end;
     margin-top: -4rem;
+  }
+
+  &__cards {
+    background-color: var(--color-navy-1);
   }
 }
 
 .prodi-card-container {
   display: grid;
   align-items: center;
-
+  align-content: space-around;
   justify-content: space-between;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 }
