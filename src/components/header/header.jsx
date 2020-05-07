@@ -114,6 +114,7 @@ const Header = ({ className = '', color }) => {
   if (color === 'green') headerClass.push('header--green');
   if (color === 'yellow') headerClass.push('header--yellow');
   if (color === 'tos') headerClass.push('header--tos');
+  if (color === 'white') headerClass.push('header--white');
   if (className.length > 0) headerClass.push(className);
 
   return (

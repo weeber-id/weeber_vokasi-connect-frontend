@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import ProdiCard from '../../components/prodi-card/prodi-card';
-import { ReactComponent as ProdiIllustration } from '../../assets/illustrations/infoprodiutama-01.svg';
+import { ReactComponent as ProdiIllustration } from '../../assets/illustrations/barunih-01.svg';
 import './info-prodi_page.styles.scss';
 import prodi1 from '../../assets/icons/infoprodiurutan-01.svg';
 import prodi2 from '../../assets/icons/infoprodiurutan-02.svg';
@@ -111,16 +111,16 @@ const ProdiPage = () => {
             <ProdiIllustration />
           </div>
           <div className="info-prodi__main">
-            <h1 style={{ color: '#395f7d' }} className="heading-primary">
+            <h1 style={{ color: '#395f7d' }}>
               <span>Info</span> <br /> Program Studi
             </h1>
           </div>
         </section>
         <div className="info-prodi__tambahan" />
         <section className="info-prodi-ahli-madya">
-          <div>
+          <div className="info-prodi__cards">
             <h1
-              style={{ color: '#395f7d' }}
+              style={{ color: 'white' }}
               className="heading-primary text-align-left mb-sm"
             >
               Ahli Madya Terapan
@@ -133,9 +133,9 @@ const ProdiPage = () => {
           </div>
         </section>
         <section className="info-prodi-sarjana-terapan">
-          <div>
+          <div className="info-prodi__cards">
             <h1
-              style={{ color: '#395f7d' }}
+              style={{ color: 'white' }}
               className="heading-primary text-align-left mb-sm"
             >
               Sarjana Terapan

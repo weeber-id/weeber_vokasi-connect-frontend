@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Swiper from 'react-id-swiper';
+import './event-page.styles.scss';
 
 import 'swiper/swiper.scss';
 

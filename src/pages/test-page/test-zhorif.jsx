@@ -1,12 +1,11 @@
 import React from 'react';
-import ProdiCard from '../../components/prodi-card/prodi-card';
-import EventCard from '../../components/event-card/event-card';
+
+import Prestasi from '../../components/prestasi-half/prestasi.component';
 
 const Iseng = () => {
   return (
     <div>
-      <ProdiCard />
-      <EventCard />
+      <Prestasi />
     </div>
   );
 };
