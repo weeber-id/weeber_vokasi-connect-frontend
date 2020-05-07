@@ -1,0 +1,44 @@
+.artikel-detail {
+  padding: 2rem 10rem;
+
+  &__cover {
+    height: 50vh;
+    background-color: var(--color-light-grey-1);
+    margin-top: 8rem;
+    animation: colorChange 2s infinite;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+
+    &--skeleton {
+      @include text-skeleton(70%, 4rem);
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text-skeleton {
+    @include text-skeleton(100%, 1.6rem);
+    margin-bottom: 1rem;
+
+    &--author {
+      @include text-skeleton(20rem, 2.4rem);
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+
+    &--2 {
+      width: 98%;
+    }
+
+    &--3 {
+      width: 95%;
+    }
+  }
+
+  &__img-skeleton {
+    height: 30vh;
+    animation: colorChange 2s infinite;
+  }
+}

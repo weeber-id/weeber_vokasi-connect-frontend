@@ -1,30 +1,92 @@
 .artikel-card {
   width: 25rem;
   border-radius: 5px;
-  overflow: hidden;
-  height: 35rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover &__cta {
+    color: var(--color-navy-1);
+  }
 
   &__thumbnail {
     height: 15rem;
-    background-color: blanchedalmond;
+    background-color: var(--color-light-blue-1);
+
+    &--skeleton {
+      animation: colorChange 2s infinite;
+    }
   }
 
   &__title {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.4rem;
+    line-height: 130%;
+
+    &--skeleton-1 {
+      @include text-skeleton(100%, 3rem);
+    }
+
+    &--skeleton-2 {
+      @include text-skeleton(50%, 3rem);
+      margin-bottom: 2rem;
+    }
   }
 
   &__preview {
-    padding: 1rem;
+    padding: 1.5rem;
+    height: 22rem;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 5;
+      background: linear-gradient(180deg, transparent 70%, rgba(white, 1));
+    }
+  }
+
+  &__cta {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--color-light-blue-1);
   }
 
   &__date {
     font-size: 1.2rem;
     color: #bbb;
+    margin-bottom: 0.5rem;
+
+    &--skeleton {
+      @include text-skeleton(40%, 2rem);
+      margin-bottom: 2rem;
+    }
   }
 
   &__content {
     font-size: 1.2rem;
     color: #bbb;
+  }
+
+  &__text-skeleton {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    &--1 {
+      @include text-skeleton(100%, 1.2rem);
+    }
+
+    &--2 {
+      @include text-skeleton(80%, 1.2rem);
+    }
+
+    &--3 {
+      @include text-skeleton(60%, 1.2rem);
+    }
   }
 }
