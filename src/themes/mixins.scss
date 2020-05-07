@@ -1,0 +1,8 @@
+@mixin text-skeleton($width, $height) {
+  height: $height;
+  width: $width;
+
+  animation-name: colorChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

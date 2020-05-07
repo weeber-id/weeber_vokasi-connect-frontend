@@ -6,7 +6,8 @@ const InputForm = ({
   type,
   onChange,
   name,
-  placeholder
+  placeholder,
+  required
 }) => {
   const inputClass = [
     `${type === 'textarea' ? 'input-textarea' : 'input-form'}`
@@ -22,6 +23,7 @@ const InputForm = ({
         onChange={onChange}
         className={inputClass.join(' ')}
         value={value}
+        required={required}
       />
     );
   }
@@ -34,6 +36,7 @@ const InputForm = ({
       type={type}
       className={inputClass.join(' ')}
       value={value}
+      required={required}
     />
   );
 };

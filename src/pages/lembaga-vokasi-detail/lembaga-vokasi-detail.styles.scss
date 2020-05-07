@@ -1,0 +1,111 @@
+.lembaga-detail {
+  &__heroes {
+    background-color: var(--color-navy-1);
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  &__logo {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    border: 1rem solid var(--color-navy-1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+
+  &__caption {
+    text-align: center;
+    font-family: 'Product Sans';
+    font-weight: bold;
+    color: white;
+  }
+
+  &__name {
+    font-size: 7.2rem;
+  }
+
+  &__tagline {
+    font-size: 5rem;
+  }
+
+  &__overview {
+    padding: 5rem;
+  }
+}
+
+.petinggi {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-gap: 2rem 0;
+    padding: 0 10rem;
+  }
+  &__img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  &__identitas {
+    text-align: center;
+  }
+
+  &__nama {
+    color: var(--color-navy-1);
+    font-size: 2rem;
+  }
+
+  &__jurusan {
+    color: var(--color-dark-grey-1);
+  }
+}
+
+.pengurus {
+  padding: 5rem;
+  background-color: var(--color-navy-1);
+  color: white;
+
+  &__ph {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__jabatan {
+    font-size: 1.8rem;
+  }
+
+  &__nama {
+    color: var(--color-light-grey-2);
+    font-size: 1.6rem;
+  }
+
+  &__departements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 4rem;
+  }
+
+  &__departement {
+    width: max-content;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.overview-lists {
+  text-align: left;
+  margin: 0 auto;
+  min-width: min-content;
+  max-width: max-content;
+}

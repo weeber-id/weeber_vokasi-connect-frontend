@@ -1,0 +1,9 @@
+.article {
+  padding: 10rem 5rem 3rem 5rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    grid-gap: 4rem;
+  }
+}

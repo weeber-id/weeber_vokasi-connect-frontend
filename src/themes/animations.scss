@@ -1,0 +1,13 @@
+@keyframes colorChange {
+  0% {
+    background-color: var(--color-light-grey-1);
+  }
+
+  50% {
+    background-color: var(--color-light-grey-3);
+  }
+
+  100% {
+    background-color: var(--color-light-grey-1);
+  }
+}
