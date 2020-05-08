@@ -21,6 +21,7 @@ function App() {
       <Route exact path="/" component={HomePage} />
       <Route exact path="/iseng" component={Iseng} />
       <Route exact path="/event" component={EventPage} />
+
       <Route
         exact
         path="/info-vokasi/ruang-prestasi"
