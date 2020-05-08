@@ -111,8 +111,10 @@ const ProdiPage = () => {
             <ProdiIllustration />
           </div>
           <div className="info-prodi__main">
-            <h1 style={{ color: '#395f7d' }}>
-              <span>Info</span> <br /> Program Studi
+            <h1 style={{ color: '#395f7d' }} className="heading-primary">
+              <span>Info </span>
+              <br />
+              Program Studi
             </h1>
           </div>
         </section>
