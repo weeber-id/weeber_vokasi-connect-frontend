@@ -15,7 +15,7 @@ const LembagaVokasiDetailPage = () => {
   if (lembagaFiltered.length === 0) {
     return (
       <>
-        <p>Page not FOund</p>
+        <p>Page not Found</p>
         <Link to="/">Back To Home</Link>
       </>
     );

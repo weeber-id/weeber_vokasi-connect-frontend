@@ -9,7 +9,9 @@ import BemVokasiPage from './pages/bem-vokasi-page/bem-vokasi-page';
 import ArticlePageDetail from './pages/article-page-detail/article-page-detail';
 import HomePage from './pages/homepage/homepage';
 import EventPage from './pages/event-page/event-page';
+import Iseng from './pages/test-page/test-zhorif';
 import LembagaVokasiPage from './pages/lembaga-vokasi/lembaga-vokasi';
+import RuangPrestasi from './pages/ruang-prestasi-page/ruang-prestasi-page';
 import LembagaVokasiDetailPage from './pages/lembaga-vokasi-detail/lembaga-vokasi-detail';
 import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 
@@ -18,7 +20,14 @@ function App() {
     <div className="App">
       <ScrollToTop />
       <Route exact path="/" component={HomePage} />
+      <Route exact path="/iseng" component={Iseng} />
       <Route exact path="/event" component={EventPage} />
+
+      <Route
+        exact
+        path="/info-vokasi/ruang-prestasi"
+        component={RuangPrestasi}
+      />
       <Route exact path="/info-vokasi/triumph-of-spartan" component={Triumph} />
       <Route path="/info-vokasi/info-prodi" component={ProdiPage} />
       <Route exact path="/artikel" component={ArticlePage} />

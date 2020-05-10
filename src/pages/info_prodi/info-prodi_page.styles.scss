@@ -1,0 +1,47 @@
+.info-prodi {
+  background-color: var(--color-light-grey-1);
+  padding: 3rem 3rem;
+  padding-top: 0rem;
+  padding-left: 0rem;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__picture,
+  &__main {
+    width: 50%;
+    h1 {
+      font-size: 4rem;
+    }
+    span {
+      font-size: 7rem;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      align-items: flex-end;
+    }
+  }
+
+  &__tambahan {
+    height: 8rem;
+    width: 100%;
+    background-color: var(--color-dark-grey-1);
+    align-items: flex-end;
+    margin-top: -4rem;
+  }
+
+  &__cards {
+    background-color: var(--color-navy-1);
+  }
+}
+
+.prodi-card-container {
+  display: grid;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}

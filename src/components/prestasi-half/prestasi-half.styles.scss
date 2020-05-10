@@ -1,0 +1,15 @@
+.ruang-prestasi {
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+  }
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: var(--color-yellow-1);
+}
