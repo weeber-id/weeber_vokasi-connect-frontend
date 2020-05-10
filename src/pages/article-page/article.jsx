@@ -62,7 +62,7 @@ const ArticlePage = () => {
               <ArtikelCard type="skeleton" />
             </>
           ) : isError ? (
-            <span>Oops Error</span>
+            <span>Oops Error, Please Reload or Comeback again later!</span>
           ) : (
             articles?.map((article) => (
               <>

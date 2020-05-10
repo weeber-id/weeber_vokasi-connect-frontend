@@ -1,0 +1,11 @@
+.filosofi {
+  &__card {
+    background-color: var(--color-navy-2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+}

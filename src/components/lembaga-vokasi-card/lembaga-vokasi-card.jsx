@@ -8,7 +8,7 @@ const LembagaVokasiCard = ({ nama, src, url }) => {
         style={{ textDecoration: 'none' }}
         to={
           url === 'bem-vokasi-ui'
-            ? '/profil-organisasi'
+            ? '/profil-organisasi/visi-misi'
             : `/lembaga-vokasi-ui/${url}`
         }
       >
