@@ -32,17 +32,12 @@
     background-color: var(--color-yellow-2);
   }
 
-<<<<<<< HEAD
   &--yellow-light {
     background-color: var(--color-yellow-3);
   }
 
   &--navy-2 {
     background-color: var(--color-navy-2);
-=======
-  &--white {
-    background-color: var(--color-white-1);
->>>>>>> master
   }
 
   &__item {
@@ -97,6 +92,20 @@
     text-align: center;
     padding: 0 1.5rem;
 
+    &:hover {
+      background-color: var(--color-light-grey-1);
+    }
+
+    &--hover {
+      &:hover .sub-dropdown {
+        display: flex;
+      }
+    }
+
+    .sub-dropdown {
+      display: none;
+    }
+
     &:link:hover,
     &:visited:hover {
       background-color: var(--color-light-grey-1);
@@ -112,13 +121,16 @@
 .sub-dropdown {
   position: absolute;
   top: -0.8rem;
-  left: -13rem;
+  left: -50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   padding: 1rem 0rem;
   border-radius: 1rem;
+  box-shadow: 3px 1rem 1rem rgba(black, 0.15);
+  width: 20rem;
 
   &__link {
     cursor: pointer;

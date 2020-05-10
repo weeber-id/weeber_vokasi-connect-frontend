@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/logos/logo.svg';
 
 const HeaderDropdown = ({ type }) => {
-  const [hiddenDropDown, setHiddenDropDown] = useState(true);
-
   if (type === 'info-vokasi') {
     return (
       <div className="profil-dropdown">
@@ -51,55 +49,83 @@ const HeaderDropdown = ({ type }) => {
       >
         <span className="profil-dropdown__item">Kesekretariatan</span>
       </Link>
-      <Link
-        onMouseOver={() => {
-          setHiddenDropDown(false);
-        }}
-        onMouseLeave={() => {
-          setHiddenDropDown(true);
-        }}
-        className="profil-dropdown__link"
-        to="/profil-organisasi/sospol"
-      >
-        <span className="profil-dropdown__item">Sospol</span>
+      <span className="profil-dropdown__link profil-dropdown__link--hover">
+        <Link
+          className="profil-dropdown__link"
+          to="/profil-organisasi/sosmaling"
+        >
+          <span className="profil-dropdown__item">Sospol</span>
 
-        {/* sub dropdown menu sospol */}
-
-        {hiddenDropDown ? null : (
-          <div className="sub-dropdown">
-            <Link
-              className="sub-dropdown__link"
-              to="/profil-organisasi/sospol/sosmaling"
-            >
-              <span className="profil-dropdown__item">Sosmaling</span>
-            </Link>
-            <Link
-              className="sub-dropdown__link"
-              to="/profil-organisasi/sospol/adkesma"
-            >
-              <span className="profil-dropdown__item">Adkesma</span>
-            </Link>
-            <Link
-              className="sub-dropdown__link"
-              to="/profil-organisasi/sospol/kastrat"
-            >
-              <span className="profil-dropdown__item">Kastrat</span>
-            </Link>
-          </div>
-        )}
-      </Link>
-      <Link
-        className="profil-dropdown__link"
-        to="/profil-organisasi/kemahasiswaan"
-      >
-        <span className="profil-dropdown__item">Kemahasiswaan</span>
-      </Link>
-      <Link className="profil-dropdown__link" to="/profil-organisasi/internal">
-        <span className="profil-dropdown__item">Internal</span>
-      </Link>
-      <Link className="profil-dropdown__link" to="/profil-organisasi/kki">
-        <span className="profil-dropdown__item">KKI</span>
-      </Link>
+          {/* sub dropdown menu sospol */}
+        </Link>
+        <div className="sub-dropdown">
+          <Link
+            className="sub-dropdown__link"
+            to="/profil-organisasi/sosmaling"
+          >
+            <span className="profil-dropdown__item">Sosmaling</span>
+          </Link>
+          <Link className="sub-dropdown__link" to="/profil-organisasi/adkesma">
+            <span className="profil-dropdown__item">Adkesma</span>
+          </Link>
+          <Link className="sub-dropdown__link" to="/profil-organisasi/kastrat">
+            <span className="profil-dropdown__item">Kastrat</span>
+          </Link>
+        </div>
+      </span>
+      <span className="profil-dropdown__link profil-dropdown__link--hover">
+        <Link
+          className="profil-dropdown__link"
+          to="/profil-organisasi/olahraga"
+        >
+          <span className="profil-dropdown__item">Kemahasiswaan</span>
+        </Link>
+        <div className="sub-dropdown">
+          <Link className="sub-dropdown__link" to="/profil-organisasi/olahraga">
+            <span className="profil-dropdown__item">Olahraga</span>
+          </Link>
+          <Link className="sub-dropdown__link" to="/profil-organisasi/senbud">
+            <span className="profil-dropdown__item">Seni Budaya</span>
+          </Link>
+          <Link className="sub-dropdown__link" to="/profil-organisasi/p&k">
+            <span className="profil-dropdown__item">
+              Pendidikan & Keilmuwan
+            </span>
+          </Link>
+          <Link
+            className="sub-dropdown__link"
+            to="/profil-organisasi/sospol/pemkar"
+          >
+            <span className="profil-dropdown__item">Pengembangan Karir</span>
+          </Link>
+        </div>
+      </span>
+      <span className="profil-dropdown__link profil-dropdown__link--hover">
+        <Link className="profil-dropdown__link" to="/profil-organisasi/litbang">
+          <span className="profil-dropdown__item">Internal</span>
+        </Link>
+        <div className="sub-dropdown">
+          <Link className="sub-dropdown__link" to="/profil-organisasi/litbang">
+            <span className="profil-dropdown__item">Litbang</span>
+          </Link>
+          <Link className="sub-dropdown__link" to="/profil-organisasi/psdm">
+            <span className="profil-dropdown__item">PSDM</span>
+          </Link>
+        </div>
+      </span>
+      <span className="profil-dropdown__link profil-dropdown__link--hover">
+        <Link className="profil-dropdown__link" to="/profil-organisasi/humas">
+          <span className="profil-dropdown__item">KKI</span>
+        </Link>
+        <div className="sub-dropdown">
+          <Link className="sub-dropdown__link" to="/profil-organisasi/humas">
+            <span className="profil-dropdown__item">Humas</span>
+          </Link>
+          <Link className="sub-dropdown__link" to="/profil-organisasi/dkv">
+            <span className="profil-dropdown__item">DKV</span>
+          </Link>
+        </div>
+      </span>
     </div>
   );
 };
@@ -114,12 +140,8 @@ const Header = ({ className = '', color }) => {
   if (color === 'green') headerClass.push('header--green');
   if (color === 'yellow') headerClass.push('header--yellow');
   if (color === 'tos') headerClass.push('header--tos');
-<<<<<<< HEAD
   if (color === 'yellow-light') headerClass.push('header--yellow-light');
   if (color === 'navy-2') headerClass.push('header--navy-2');
-=======
-  if (color === 'white') headerClass.push('header--white');
->>>>>>> master
   if (className.length > 0) headerClass.push(className);
 
   return (
@@ -146,7 +168,7 @@ const Header = ({ className = '', color }) => {
           <Link className="header__item" to="/data-publik">
             <span>Data Publik</span>
           </Link>
-          <Link
+          <span
             onMouseOver={() => {
               setProfilHidden(false);
             }}
@@ -154,12 +176,17 @@ const Header = ({ className = '', color }) => {
               setProfilHidden(true);
             }}
             className="header__item"
-            to="/profil-organisasi"
           >
-            <span>Profil BEM Vokasi UI</span>
+            <Link
+              style={{ marginRight: 0 }}
+              className="header__item"
+              to="/profil-organisasi/visi-misi"
+            >
+              <span>Profil BEM Vokasi UI</span>
+            </Link>
             {profilHidden ? null : <HeaderDropdown />}
-          </Link>
-          <Link
+          </span>
+          <span
             onMouseOver={() => {
               setHiddenInfo(false);
             }}
@@ -167,11 +194,16 @@ const Header = ({ className = '', color }) => {
               setHiddenInfo(true);
             }}
             className="header__item"
-            to="/info-vokasi"
           >
-            <span>Info Vokasi</span>
+            <Link
+              style={{ marginRight: 0 }}
+              className="header__item"
+              to="/info-vokasi"
+            >
+              <span>Info Vokasi</span>
+            </Link>
             {hiddenInfo ? null : <HeaderDropdown type="info-vokasi" />}
-          </Link>
+          </span>
         </div>
       </nav>
     </header>
