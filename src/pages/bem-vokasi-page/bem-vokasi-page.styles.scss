@@ -1,0 +1,158 @@
+.profil {
+  &__header {
+    margin-top: 8rem;
+    height: 80vh;
+  }
+
+  &__hero {
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+  }
+
+  &__name {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-navy-2);
+  }
+}
+
+.profil-overview {
+  padding-top: 4rem;
+
+  &__description {
+    padding: 0 15rem;
+
+    .text {
+      text-align: justify;
+    }
+  }
+
+  &__pejabat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 5rem 10rem;
+  }
+
+  &__img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  &__staff {
+    padding: 2rem 5rem;
+  }
+
+  &__container-staff {
+    background-color: var(--color-light-blue-1);
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
+
+  &__items {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    color: white;
+  }
+}
+
+.proker {
+  background-color: var(--color-navy-2);
+  padding: 5rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 25rem;
+    height: 15rem;
+    background-color: #fff;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      text-align: center;
+      width: 80%;
+      hyphens: auto;
+    }
+  }
+}
+
+.profil-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  position: relative;
+  z-index: 5;
+  &__next,
+  &__previous {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+      .profil-nav__label {
+        color: var(--color-dark-grey-2);
+      }
+    }
+  }
+
+  &__next {
+    align-items: flex-end;
+  }
+
+  &__previous {
+    align-items: flex-start;
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    color: var(--color-dark-grey-1);
+  }
+}
+
+.logo {
+  &__hero {
+    background-color: var(--color-light-blue-2);
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 5rem;
+  }
+
+  &__pembatas {
+    height: 3rem;
+    background-color: var(--color-navy-2);
+  }
+}
+
+.filosofi-logo {
+  background-color: var(--color-light-blue-2);
+  padding: 3rem 5rem;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-gap: 5rem;
+  }
+}

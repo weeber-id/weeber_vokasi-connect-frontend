@@ -32,6 +32,14 @@
     background-color: var(--color-yellow-2);
   }
 
+  &--yellow-light {
+    background-color: var(--color-yellow-3);
+  }
+
+  &--navy-2 {
+    background-color: var(--color-navy-2);
+  }
+
   &__item {
     cursor: pointer;
     text-decoration: none;
