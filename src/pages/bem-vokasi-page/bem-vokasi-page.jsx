@@ -153,15 +153,15 @@ const BemVokasiPage = (props) => {
               }}
               className="profil__hero"
             />
-            <div className="profil__name">
-              <h1
-                style={{ color: 'white' }}
-                className="heading-primary text-align-center"
-              >
-                {data.name}
-              </h1>
-            </div>
           </section>
+          <div className="profil__name">
+            <h1
+              style={{ color: 'white' }}
+              className="heading-primary text-align-center"
+            >
+              {data.name}
+            </h1>
+          </div>
           <div className="pi__ketua-wakil">
             {(function () {
               let orang = [];
@@ -260,15 +260,15 @@ const BemVokasiPage = (props) => {
             }}
             className="profil__hero"
           />
-          <div className="profil__name">
-            <h1
-              style={{ color: 'white' }}
-              className="heading-primary text-align-center"
-            >
-              {data.name}
-            </h1>
-          </div>
         </section>
+        <div className="profil__name">
+          <h1
+            style={{ color: 'white' }}
+            className="heading-primary text-align-center"
+          >
+            {data.name}
+          </h1>
+        </div>
         <section className="profil-overview">
           <div className="profil-overview__description">
             <p className="text">{data.description}</p>

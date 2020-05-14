@@ -2,20 +2,29 @@
   &__header {
     margin-top: 8rem;
     height: 80vh;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 0;
+    }
   }
 
   &__hero {
     background-position: center;
     background-size: cover;
-    height: 80%;
+    height: 100%;
   }
 
   &__name {
-    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-navy-2);
+    padding: 2rem;
+    .heading-primary {
+      @media only screen and (max-width: 600px) {
+        font-size: 2.8rem;
+      }
+    }
   }
 }
 
@@ -24,6 +33,10 @@
 
   &__description {
     padding: 0 15rem;
+
+    @media only screen and (max-width: 900px) {
+      padding: 0 4rem;
+    }
 
     .text {
       text-align: justify;
@@ -34,6 +47,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     padding: 5rem 10rem;
+    grid-gap: 2rem 0;
+
+    @media only screen and (max-width: 900px) {
+      padding: 3rem 0rem;
+    }
   }
 
   &__img {
@@ -69,6 +87,10 @@
 
   &__staff {
     padding: 2rem 5rem;
+
+    @media only screen and (max-width: 900px) {
+      padding: 2rem 0rem;
+    }
   }
 
   &__container-staff {
@@ -81,6 +103,10 @@
     width: max-content;
     margin: 0 auto;
     border-radius: 1rem;
+
+    @media only screen and (max-width: 900px) {
+      padding: 3rem 4rem;
+    }
   }
 
   &__items {
@@ -107,7 +133,7 @@
     width: 25rem;
     height: 15rem;
     background-color: #fff;
-    margin-right: 4rem;
+    margin: 0 2rem;
     margin-bottom: 4rem;
     display: flex;
     justify-content: center;
@@ -150,10 +176,13 @@
 
   &__next {
     align-items: flex-end;
+    margin-left: 2rem;
+    text-align: right;
   }
 
   &__previous {
     align-items: flex-start;
+    margin-right: 2rem;
   }
 
   &__label {
@@ -174,7 +203,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 5rem;
+    padding: 5rem;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 0;
+
+      svg {
+        @media only screen and (max-width: 800px) {
+          width: 65vw;
+          height: 65vw;
+        }
+      }
+    }
   }
 
   &__pembatas {
@@ -186,6 +226,12 @@
 .filosofi-logo {
   background-color: var(--color-light-blue-2);
   padding: 3rem 5rem;
+
+  & > .text {
+    @media only screen and (max-width: 900px) {
+      width: 100% !important;
+    }
+  }
 
   &__cards {
     display: grid;
@@ -199,6 +245,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     padding: 5rem 10rem;
+    grid-gap: 5rem 10rem;
+
+    @media only screen and (max-width: 800px) {
+      padding: 5rem 2rem;
+    }
   }
 
   &__ph {
@@ -206,6 +257,10 @@
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     padding: 5rem 10rem;
     grid-gap: 5rem 10rem;
+
+    @media only screen and (max-width: 800px) {
+      padding: 5rem 0;
+    }
   }
 }
 
@@ -213,6 +268,10 @@
   margin-top: 8rem;
   padding: 5rem;
   background-color: var(--color-green-1);
+
+  @media only screen and (max-width: 900px) {
+    margin-top: 0;
+  }
 }
 
 .visi {
@@ -220,6 +279,10 @@
   text-align: right;
   width: 60%;
   margin-left: auto;
+
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+  }
 
   .heading-secondary {
     background-color: var(--color-yellow-2);

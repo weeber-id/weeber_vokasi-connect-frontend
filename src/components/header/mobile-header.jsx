@@ -101,14 +101,14 @@ const MobileHeader = ({ hidden, setHidden }) => {
             <span className="mobile-header__item">Beranda</span>
           </NavLink>
           <NavLink
-            to="artikel"
+            to="/artikel"
             className="mobile-header__link"
             activeClassName="active"
           >
             <span className="mobile-header__item">Artikel</span>
           </NavLink>
           <NavLink
-            to="event"
+            to="/event"
             className="mobile-header__link"
             activeClassName="active"
           >
@@ -149,12 +149,14 @@ const MobileHeader = ({ hidden, setHidden }) => {
 
       <div className={`mobile-header ${collapse ? 'collapse' : ''}`}>
         <div className="mobile-header__brand">
-          <div
-            onClick={() => {
-              setCollapse(true);
-            }}
-            className="mobile-header__back"
-          />
+          <div className="mobile-header__back-container">
+            <div
+              onClick={() => {
+                setCollapse(true);
+              }}
+              className="mobile-header__back"
+            />
+          </div>
           <span className="mobile-header__label">Back</span>
         </div>
         <div className="mobile-header__items">
@@ -185,12 +187,14 @@ const MobileHeader = ({ hidden, setHidden }) => {
 
       <div className={`mobile-header ${profilCollapse ? 'collapse' : ''}`}>
         <div className="mobile-header__brand">
-          <div
-            onClick={() => {
-              setProfilCollapse(true);
-            }}
-            className="mobile-header__back"
-          />
+          <div className="mobile-header__back-container">
+            <div
+              onClick={() => {
+                setProfilCollapse(true);
+              }}
+              className="mobile-header__back"
+            />
+          </div>
           <span className="mobile-header__label">Back</span>
         </div>
         <div className="mobile-header__items">
