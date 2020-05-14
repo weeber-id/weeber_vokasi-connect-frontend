@@ -15,8 +15,6 @@ const BemVokasiPage = (props) => {
   const profilBemFiltered = profilBem.filter((profil) => profil.id === id);
   const data = profilBemFiltered[0];
 
-  console.log(profilBem);
-
   if (id === 'logo') {
     return (
       <>
@@ -155,15 +153,15 @@ const BemVokasiPage = (props) => {
               }}
               className="profil__hero"
             />
-            <div className="profil__name">
-              <h1
-                style={{ color: 'white' }}
-                className="heading-primary text-align-center"
-              >
-                {data.name}
-              </h1>
-            </div>
           </section>
+          <div className="profil__name">
+            <h1
+              style={{ color: 'white' }}
+              className="heading-primary text-align-center"
+            >
+              {data.name}
+            </h1>
+          </div>
           <div className="pi__ketua-wakil">
             {(function () {
               let orang = [];
@@ -262,22 +260,22 @@ const BemVokasiPage = (props) => {
             }}
             className="profil__hero"
           />
-          <div className="profil__name">
-            <h1
-              style={{ color: 'white' }}
-              className="heading-primary text-align-center"
-            >
-              {data.name}
-            </h1>
-          </div>
         </section>
+        <div className="profil__name">
+          <h1
+            style={{ color: 'white' }}
+            className="heading-primary text-align-center"
+          >
+            {data.name}
+          </h1>
+        </div>
         <section className="profil-overview">
           <div className="profil-overview__description">
             <p className="text">{data.description}</p>
           </div>
           <div className="profil-overview__pejabat">
             {data.pejabat.map((orang) => (
-              <div className="profil-overview__orang">
+              <div key={orang.nama} className="profil-overview__orang">
                 <img
                   src={require(`../../assets/images/profil-bem/${orang.foto}`)}
                   alt=""
@@ -302,7 +300,9 @@ const BemVokasiPage = (props) => {
               </h2>
               <ol className="profil-overview__items">
                 {data.staff.map((staff) => (
-                  <li className="profil-overview__item">{staff}</li>
+                  <li key={staff} className="profil-overview__item">
+                    {staff}
+                  </li>
                 ))}
               </ol>
             </div>
@@ -317,7 +317,7 @@ const BemVokasiPage = (props) => {
           </h1>
           <div className="proker__container">
             {data.proker.map((proker) => (
-              <div className="proker__item">
+              <div key={proker} className="proker__item">
                 <span>{proker}</span>
               </div>
             ))}

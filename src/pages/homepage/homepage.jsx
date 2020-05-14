@@ -33,7 +33,7 @@ const HomePage = () => {
 
   const handleClick = () => {
     window.scrollTo({
-      top: aspirasiRef.current.scrollHeight,
+      top: aspirasiRef.current.scrollHeight - 80,
       behavior: 'smooth'
     });
   };
@@ -74,7 +74,12 @@ const HomePage = () => {
         <section className="heroes">
           <div className="heroes__welcome">
             <h1 style={{ color: '#fff' }} className="heading-primary">
-              Selamat datang! <br /> Mari berjejaring bersama di <br />
+              <span>
+                Selamat datang!
+                <br />
+                Mari berjejaring bersama di
+                <br />
+              </span>
               <span>Vokasi Connect</span>
             </h1>
             <Button onClick={handleClick} className="mt-sm">

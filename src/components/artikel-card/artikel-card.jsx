@@ -4,7 +4,8 @@ const ArtikelCard = ({
   title = 'judulnya ini cukup panjang tambah panjang 2020',
   date_created = new Date(),
   content = '',
-  type = ''
+  type = '',
+  onClick
 }) => {
   let slicedContent = content;
 
@@ -33,7 +34,7 @@ const ArtikelCard = ({
   }
 
   return (
-    <div className="artikel-card">
+    <div onClick={onClick} className="artikel-card">
       <div className="artikel-card__thumbnail"></div>
       <div className="artikel-card__preview">
         <h3 className="artikel-card__title">{title}</h3>

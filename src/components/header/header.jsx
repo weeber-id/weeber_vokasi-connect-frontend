@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import MobileHeader from './mobile-header';
 import { ReactComponent as Logo } from '../../assets/logos/logo.svg';
 
 const HeaderDropdown = ({ type }) => {
@@ -133,6 +134,7 @@ const HeaderDropdown = ({ type }) => {
 const Header = ({ className = '', color }) => {
   const [profilHidden, setProfilHidden] = useState(true);
   const [hiddenInfo, setHiddenInfo] = useState(true);
+  const [isHidden, setHidden] = useState(true);
 
   const headerClass = ['header'];
 
@@ -146,6 +148,15 @@ const Header = ({ className = '', color }) => {
 
   return (
     <header>
+      <div className="hamburger__container">
+        <div
+          onClick={() => {
+            setHidden(false);
+          }}
+          className="hamburger"
+        />
+      </div>
+      <MobileHeader hidden={isHidden} setHidden={setHidden} />
       <nav className={headerClass.join(' ')}>
         <div className="header__logo">
           <Link to="/">
