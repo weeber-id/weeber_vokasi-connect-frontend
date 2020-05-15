@@ -14,12 +14,13 @@ const ArticlePageDetail = () => {
     content: '',
     id: '',
     time_created: '',
-    time_modified: ''
+    time_modified: '',
+    thumbnail: ''
   });
   const [isLoading, setLoading] = useState(true);
 
   const { id } = useParams();
-  const { title, author, date_created, content } = state;
+  const { title, author, date_created, content, thumbnail } = state;
 
   useEffect(() => {
     const url = 'http://35.240.223.151:8003';
@@ -73,7 +74,17 @@ const ArticlePageDetail = () => {
           </>
         ) : (
           <>
-            <div className="artikel-detail__cover" />
+            <div className="artikel-detail__cover">
+              {!thumbnail ? (
+                <img
+                  src={require('../../assets/images/img-placeholder.png')}
+                  alt="placeholder"
+                  className="artikel-detail__img"
+                />
+              ) : (
+                <img src={thumbnail} alt="" className="artikel-detail__img" />
+              )}
+            </div>
             <div className="artikel-detail">
               <h1 className="artikel-detail__title text-align-center mb-xs">
                 {title}

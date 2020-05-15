@@ -46,8 +46,12 @@ const Footer = () => {
             <Twitter height="3rem" width="3rem" />
           </a>
         </div>
-        <p className="text">&copy; 2020 Made by Love</p>
-        <p className="text">Biro Desain Komunikasi Visual BEM Vokasi UI 2020</p>
+        <div>
+          <p className="text">&copy; 2020 Made by Love</p>
+          <p className="text">
+            Biro Desain Komunikasi Visual <br /> BEM Vokasi UI 2020
+          </p>
+        </div>
       </div>
     </footer>
   );

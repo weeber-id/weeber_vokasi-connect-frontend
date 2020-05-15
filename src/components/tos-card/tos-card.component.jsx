@@ -5,7 +5,10 @@ const TosCard = ({ imgUrl, title, desc }) => {
   return (
     <div className="tos-card">
       <img className="tos-card__logo" src={imgUrl} alt="" />
-      <h2 className="heading-secondary" style={{ color: '#fff' }}>
+      <h2
+        className="heading-secondary text-align-center"
+        style={{ color: '#fff' }}
+      >
         {title}
       </h2>
       <p

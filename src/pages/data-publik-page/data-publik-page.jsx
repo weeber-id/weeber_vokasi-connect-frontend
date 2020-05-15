@@ -24,29 +24,27 @@ const DataPublikPage = () => {
         </div>
         <section className="up-page">
           <div className="up-page__picture">
-            <div className="up-page__ilustration">
-              <Ilustrasi />
-            </div>
+            <Ilustrasi />
           </div>
-          <div className="up-page__button">
+          <div className="up-page__buttons">
             <div className="button-container">
               <Link to="/data-publik/data-riset">
-                <Button>
+                <Button className="btn--up-page">
                   <h3 className="text">Data Riset</h3>
                 </Button>
               </Link>
               <Link to="/data-publik/buletin">
-                <Button>
+                <Button className="btn--up-page">
                   <h3 className="text">Buletin</h3>
                 </Button>
               </Link>
               <Link to="/data-publik/kajian-strategis">
-                <Button>
+                <Button className="btn--up-page">
                   <h3 className="text">Kajian Strategis</h3>
                 </Button>
               </Link>
               <Link to="/data-publik/uu-ikm-vokasi-ui">
-                <Button>
+                <Button className="btn--up-page">
                   <h3 className="text">UU IKM Vokasi UI</h3>
                 </Button>
               </Link>

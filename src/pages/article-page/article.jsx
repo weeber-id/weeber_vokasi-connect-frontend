@@ -29,6 +29,7 @@ const ArticlePage = () => {
       .catch((err) => {
         console.log(err);
         setError(true);
+        window.location.reload();
       });
 
     return () => {

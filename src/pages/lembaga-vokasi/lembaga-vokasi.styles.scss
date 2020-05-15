@@ -11,6 +11,7 @@
 
     @media only screen and (max-width: 700px) {
       flex-direction: column;
+      padding: 2rem;
     }
   }
 
@@ -107,7 +108,7 @@
     }
   }
 
-  height: 51rem;
+  height: 40rem;
   overflow: hidden;
   padding: 0rem 5rem;
   transition: all 1s linear;
