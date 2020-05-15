@@ -1,12 +1,11 @@
 .article {
   padding: 10rem 5rem 3rem 5rem;
 
-  @media only screen and (max-width: 650px) {
-    padding: 3rem;
-  }
-
   @media only screen and (max-width: 900px) {
     padding: 3rem 5rem;
+  }
+  @media only screen and (max-width: 650px) {
+    padding: 3rem;
   }
 
   &__container {
