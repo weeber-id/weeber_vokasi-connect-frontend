@@ -14,7 +14,7 @@ import imgUIAW from '../../assets/images/UI Art War.jpg';
 import imgOIM from '../../assets/images/OIM UI.jpg';
 
 import dok1 from '../../assets/images/Dokumentasi 1JPG.jpg';
-import dok2 from '../../assets/images/Dokumentasi 2JPG.jpg';
+import dok2 from '../../assets/images/Dokumentasi 2.JPG';
 import dok3 from '../../assets/images/Dokumentasi 3JPG.jpg';
 import dok4 from '../../assets/images/Dokumentasi 4JPG.jpg';
 
@@ -137,7 +137,7 @@ const Triumph = () => {
         <div className="tos-carousel">
           <Swiper getSwiper={setSwiper} {...params}>
             {tosImg.map(({ id, ...tosImgProps }) => (
-              <TosCarousel {...tosImgProps} key={id} />
+              <TosCarousel {...tosImgProps} active={id === activeIndex} />
             ))}
           </Swiper>
           <div onClick={slideNext} className="arrowTos__right" />

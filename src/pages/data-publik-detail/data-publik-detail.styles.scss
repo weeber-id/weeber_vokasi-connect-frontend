@@ -1,0 +1,73 @@
+.button-header-container {
+  background-color: var(--color-green-1);
+
+  padding-top: 12rem;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
+  display: grid;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+
+  @media only screen and (max-width: 600px) {
+    padding-left: 8rem;
+  }
+}
+
+.data-publik-container {
+  background-color: var(--color-green-1);
+  padding-bottom: 8rem;
+
+  display: grid;
+
+  align-items: center;
+  padding-top: 5rem;
+  overflow-x: auto;
+}
+
+.btn {
+  background-color: var(--color-green-1);
+  justify-content: space-evenly;
+  border: 0.2rem solid white;
+  color: white;
+  border-radius: 114px;
+  width: 20rem;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-yellow-1);
+      color: var(--color-green-1);
+    }
+  }
+}
+
+.data-publik-table {
+  border-spacing: 2rem;
+
+  border-collapse: collapse;
+
+  th {
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    color: var(--color-green-1);
+  }
+
+  td {
+    border: 1px solid var(--color-green-1);
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color-green-1);
+    color: white;
+  }
+  tbody tr:hover {
+    background: var(--color-light-blue-1);
+  }
+}
+
+.data-publik-table-title {
+  background-color: var(--color-green-1);
+  color: white;
+}
