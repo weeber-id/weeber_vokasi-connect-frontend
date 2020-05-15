@@ -6,7 +6,7 @@ viewBox="0 0 16933 16933"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
-   <![CDATA[
+   
     .fil2 {fill:#FEFEFE}
     .fil21 {fill:#3FA38C}
     .fil9 {fill:#483779}
@@ -31,7 +31,7 @@ viewBox="0 0 16933 16933"
     .fil6 {fill:url(#id2)}
     .fil17 {fill:url(#id3)}
     .fil14 {fill:url(#id4)}
-   ]]>
+   
   </style>
     <mask id="id0">
   <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="9073.34" y1="6485.31" x2="8753.91" y2="11757.7">
