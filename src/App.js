@@ -8,7 +8,12 @@ import ArticlePage from './pages/article-page/article';
 import ArticlePageDetail from './pages/article-page-detail/article-page-detail';
 import HomePage from './pages/homepage/homepage';
 import EventPage from './pages/event-page/event-page';
-import Iseng from './pages/test-page/test-zhorif';
+
+import DataPublikPage from './pages/data-publik-page/data-publik-page';
+import DataPublikDetail from './pages/data-publik-detail/data-publik-detail';
+import DataPublikBuletin from './pages/data-publik-detail/data-publik-buletin';
+import DataPublikKastrat from './pages/data-publik-detail/data-publik-kastrat';
+import DataPublikUU from './pages/data-publik-detail/data-publik-uu';
 import LembagaVokasiPage from './pages/lembaga-vokasi/lembaga-vokasi';
 import RuangPrestasi from './pages/ruang-prestasi-page/ruang-prestasi-page';
 import LembagaVokasiDetailPage from './pages/lembaga-vokasi-detail/lembaga-vokasi-detail';
@@ -19,9 +24,25 @@ function App() {
     <div className="App">
       <ScrollToTop />
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/iseng" component={Iseng} />
-      <Route exact path="/event" component={EventPage} />
 
+      <Route exact path="/event" component={EventPage} />
+      <Route exact path="/data-publik" component={DataPublikPage} />
+      <Route
+        exact
+        path="/data-publik/data-riset"
+        component={DataPublikDetail}
+      />
+      <Route exact path="/data-publik/buletin" component={DataPublikBuletin} />
+      <Route
+        exact
+        path="/data-publik/kajian-strategis"
+        component={DataPublikKastrat}
+      />
+      <Route
+        exact
+        path="/data-publik/uu-ikm-vokasi-ui"
+        component={DataPublikUU}
+      />
       <Route
         exact
         path="/info-vokasi/ruang-prestasi"

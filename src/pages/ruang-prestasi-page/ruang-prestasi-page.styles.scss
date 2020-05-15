@@ -28,21 +28,33 @@
 
 .prestasi-table {
   background-color: var(--color-green-1);
-  padding: 3rem 3rem;
-  padding-top: 0rem;
-  padding-left: 5rem;
+
   margin-top: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  overflow-x: auto;
 }
 
 .prestasi {
   background-color: var(--color-green-1);
   max-height: 100rem;
-  overflow: hidden;
-  /*padding: repeat(4, 5rem);*/
-  padding-left: 20rem;
+  overflow-x: auto;
+  padding-left: 25rem;
+  display: grid;
+
+  &__judul,
+  &__list {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding-left: 10rem;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-left: 0rem;
+  }
+
   transition: all 1s linear;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -51,7 +63,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    padding-left: 5rem;
+
     padding: 3rem 5rem;
   }
 
@@ -66,7 +78,7 @@
   text-align: center;
   background-color: var(--color-yellow-2);
 
-  & > span {
+  & span {
     font-weight: bold;
     color: var(--color-green-1);
     font-size: 2rem;

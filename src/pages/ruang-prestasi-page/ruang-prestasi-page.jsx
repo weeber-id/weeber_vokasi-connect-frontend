@@ -5,7 +5,7 @@ import Prestasi from '../../components/prestasi-half/prestasi.component';
 
 import './ruang-prestasi-page.styles.scss';
 
-import { ReactComponent as RuangIllustration } from '../../assets/illustrations/gambarruangprestasiai-01.svg';
+import { ReactComponent as RuangIllustration } from '../../assets/illustrations/gambarruangprestasi.svg';
 
 const RuangPrestasi = () => {
   const [isCollapse, setCollapse] = useState(true);
@@ -26,7 +26,7 @@ const RuangPrestasi = () => {
             <br />{' '}
             <h3 className="heading-tertiary" style={{ color: '#fff' }}>
               Kami sangat mengapresiasi setiap <br /> curahan dedikasi yang
-              kalian berikan <br /> untuk Vokasi Universitas Indonesia
+              kalian berikan <br /> untuk Vokasi Universitas Indonesia.
             </h3>
           </div>
           <div className="ruang-prestasi__picture">
@@ -34,9 +34,7 @@ const RuangPrestasi = () => {
           </div>
         </section>
         <section className={`prestasi ${isCollapse ? 'collapse' : null}`}>
-          <div className="prestasi__container">
-            <Prestasi />
-          </div>
+          <Prestasi />
         </section>
         <div
           onClick={() => {

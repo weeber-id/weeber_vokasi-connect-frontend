@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 
+import './homepage.styles.scss';
+
 import Header from '../../components/header/header';
 import Button from '../../components/button/button';
 import Footer from '../../components/footer/footer';
