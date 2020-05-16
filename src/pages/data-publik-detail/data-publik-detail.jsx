@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './data-publik-detail.styles.scss';
 
 import { Link, useParams } from 'react-router-dom';
@@ -8,8 +8,32 @@ import Button from '../../components/button/button';
 
 const DataPublikDetail = () => {
   const { id } = useParams();
-
   const name = id.split('-').join(' ').toUpperCase();
+
+  const [data, setData] = useState([]);
+
+  console.log(data);
+
+  useEffect(() => {
+    const url = 'http://35.240.223.151:8003';
+    fetch(`${url}/all-portal-data`)
+      .then((res) => res.json())
+      .then((data) => {
+        const filteredData = data.data.filter((val) => {
+          if (val.category.name.toLowerCase() === 'kajian') {
+            val.category.name = 'kajian strategis';
+          }
+
+          return val.category.name.toLowerCase() === name.toLowerCase();
+        });
+
+        setData(filteredData);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [name]);
+
   return (
     <article className="data-publik-detail-page">
       <Header color="green" />
@@ -68,30 +92,16 @@ const DataPublikDetail = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Quo Vadis Pendidikan Vokasi di Indonesia</td>
-                  <td>BEM Vokasi UI 2020</td>
-                  <td>01/01/2020</td>
-                  <td>download</td>
-                </tr>
-                <tr>
-                  <td>Quo Vadis Pendidikan Vokasi di Indonesia</td>
-                  <td>BEM Vokasi UI 2020</td>
-                  <td>01/01/2020</td>
-                  <td>download</td>
-                </tr>
-                <tr>
-                  <td>Quo Vadis Pendidikan Vokasi di Indonesia</td>
-                  <td>BEM Vokasi UI 2020</td>
-                  <td>01/01/2020</td>
-                  <td>download</td>
-                </tr>
-                <tr>
-                  <td>Quo Vadis Pendidikan Vokasi di Indonesia</td>
-                  <td>BEM Vokasi UI 2020</td>
-                  <td>01/01/2020</td>
-                  <td>download</td>
-                </tr>
+                {data.map((val) => (
+                  <>
+                    <tr>
+                      <td>{val.title}</td>
+                      <td>BEM Vokasi UI 2020</td>
+                      <td>{val.tanggal}</td>
+                      <td>download</td>
+                    </tr>
+                  </>
+                ))}
               </tbody>
             </table>
           </div>

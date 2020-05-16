@@ -1,18 +1,35 @@
+.ruang-prestasi-page {
+  min-width: 100%;
+}
+
 .ruang-prestasi {
   background-color: var(--color-green-1);
-  padding: 3rem 3rem;
-  padding-top: 0rem;
-  padding-left: 5rem;
+  padding: 0 3rem;
   margin-top: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (max-width: 900px) {
+    margin-top: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
   &__picture,
   &__main {
     width: 50%;
+
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
     h1 {
       font-size: 4rem;
+      line-height: 1.2;
+
+      @media only screen and (max-width: 900px) {
+        padding-top: 4rem;
+      }
     }
     span {
       font-size: 7rem;
@@ -22,6 +39,14 @@
       width: 100%;
       height: auto;
       align-items: flex-end;
+
+      @media only screen and (max-width: 900px) {
+        min-width: 40rem;
+      }
+
+      @media only screen and (max-width: 500px) {
+        min-width: 26rem;
+      }
     }
   }
 }
@@ -40,35 +65,22 @@
   background-color: var(--color-green-1);
   max-height: 100rem;
   overflow-x: auto;
-  padding-left: 25rem;
-  display: grid;
 
   &__judul,
   &__list {
     width: 50%;
   }
 
-  @media only screen and (max-width: 900px) {
-    padding-left: 10rem;
-  }
   @media only screen and (max-width: 600px) {
-    padding-left: 0rem;
+    padding: 2rem;
   }
-
-  transition: all 1s linear;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
   &__container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-
     padding: 3rem 5rem;
   }
 
   &.collapse {
-    padding: 0rem 5rem;
     max-height: 0rem;
   }
 }

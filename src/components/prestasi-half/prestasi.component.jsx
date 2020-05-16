@@ -1,46 +1,38 @@
 import React from 'react';
 import './prestasi-half.styles.scss';
 
-const Prestasi = () => {
+const Prestasi = ({ data }) => {
   return (
-    <div className="ruang-prestasi__table">
+    <div className="prestasi">
       <h1
         className="heading-secondary text-align-left"
         style={{ color: 'var(--color-yellow-2)' }}
       >
         Daftar Prestasi
       </h1>
-      <table>
-        <tr className="ruang-prestasi-title">
-          <th>Nama</th>
-          <th>Jurusan</th>
-          <th>Angkatan</th>
-          <th>Prestasi</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Aktuaria</td>
-          <td>2019</td>
-          <td>Juara 1 Memancing Keributan 2020</td>
-        </tr>
-        <tr>
-          <td>Centro comercial </td>
-          <td>Adm. Rumah Sakit</td>
-          <td>2019</td>
-          <td>Juara 1 Memancing Keributan 2020</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Adm. Rumah Sakit</td>
-          <td>2017</td>
-          <td>Juara 1 Memancing Keributan 2020</td>
-        </tr>
-        <tr>
-          <td>Island Trading</td>
-          <td>Akuntansi</td>
-          <td>2018</td>
-          <td>Juara 1 Memancing Keributan 2020</td>
-        </tr>
+      <table className="ruang-prestasi__table">
+        <thead>
+          <tr className="ruang-prestasi-title">
+            <th>Nama</th>
+            <th>Jurusan</th>
+            <th>Angkatan</th>
+            <th>Prestasi</th>
+          </tr>
+        </thead>
+        <tbody>
+          {!data ? (
+            <span>Loading</span>
+          ) : (
+            data.map((val) => (
+              <tr key={val.id}>
+                <td>{val.nama}</td>
+                <td>{val.jurusan}</td>
+                <td>{val.angkatan}</td>
+                <td>{val.prestasi}</td>
+              </tr>
+            ))
+          )}
+        </tbody>
       </table>
     </div>
   );
