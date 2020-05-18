@@ -1,22 +1,12 @@
 .article {
   padding: 10rem 5rem 3rem 5rem;
 
-<<<<<<< HEAD
-  @media only screen and (max-width: 650px) {
-    padding: 3rem;
-  }
-
-  @media only screen and (max-width: 900px) {
-    padding: 3rem 5rem;
-  }
-=======
   @media only screen and (max-width: 900px) {
     padding: 3rem 5rem;
   }
   @media only screen and (max-width: 650px) {
     padding: 3rem;
   }
->>>>>>> 365b0161cf658f2cac7d655b86b3ce2234b02da7
 
   &__container {
     display: grid;
