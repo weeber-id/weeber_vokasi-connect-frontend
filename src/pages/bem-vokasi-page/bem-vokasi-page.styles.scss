@@ -1,0 +1,338 @@
+.profil {
+  &__header {
+    margin-top: 8rem;
+    height: 80vh;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 0;
+    }
+  }
+
+  &__hero {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-navy-2);
+    padding: 2rem;
+    .heading-primary {
+      @media only screen and (max-width: 600px) {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
+
+.profil-overview {
+  padding-top: 4rem;
+
+  &__description {
+    padding: 0 15rem;
+
+    @media only screen and (max-width: 900px) {
+      padding: 0 4rem;
+    }
+
+    .text {
+      text-align: justify;
+    }
+  }
+
+  &__pejabat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 5rem 10rem;
+    grid-gap: 2rem 0;
+
+    @media only screen and (max-width: 900px) {
+      padding: 3rem 0rem;
+    }
+  }
+
+  &__img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  &__orang {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__nama-pejabat {
+    color: var(--color-navy-2);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__jabatan {
+    color: var(--color-navy-2);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__jurusan-pejabat {
+    color: var(--color-dark-grey-1);
+  }
+
+  &__staff {
+    padding: 2rem 5rem;
+
+    @media only screen and (max-width: 900px) {
+      padding: 2rem 0rem;
+    }
+  }
+
+  &__container-staff {
+    background-color: var(--color-light-blue-1);
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 1rem;
+
+    @media only screen and (max-width: 900px) {
+      padding: 3rem 4rem;
+    }
+  }
+
+  &__items {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    color: white;
+  }
+}
+
+.proker {
+  background-color: var(--color-navy-2);
+  padding: 5rem;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 25rem;
+    height: 15rem;
+    background-color: #fff;
+    margin: 0 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      text-align: center;
+      width: 80%;
+      hyphens: auto;
+      font-weight: 700;
+      color: var(--color-navy-2);
+      cursor: default;
+    }
+  }
+}
+
+.profil-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  position: relative;
+  z-index: 5;
+  background-color: var(--color-yellow-1);
+  &__next,
+  &__previous {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:hover {
+      .profil-nav__label {
+        color: var(--color-dark-grey-2);
+      }
+
+      .profil-nav__link {
+        color: var(--color-navy-1);
+      }
+    }
+  }
+
+  &__next {
+    align-items: flex-end;
+    margin-left: 2rem;
+    text-align: right;
+  }
+
+  &__previous {
+    align-items: flex-start;
+    margin-right: 2rem;
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    color: var(--color-black-2);
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-navy-2);
+  }
+}
+
+.logo {
+  &__hero {
+    background-color: var(--color-light-blue-2);
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 0;
+
+      svg {
+        @media only screen and (max-width: 800px) {
+          width: 65vw;
+          height: 65vw;
+        }
+      }
+    }
+  }
+
+  &__pembatas {
+    height: 3rem;
+    background-color: var(--color-navy-2);
+  }
+}
+
+.filosofi-logo {
+  background-color: var(--color-light-blue-2);
+  padding: 3rem 5rem;
+
+  & > .text {
+    @media only screen and (max-width: 900px) {
+      width: 100% !important;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    grid-gap: 5rem;
+  }
+}
+
+.pi {
+  &__ketua-wakil {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 5rem 10rem;
+    grid-gap: 5rem 10rem;
+
+    @media only screen and (max-width: 800px) {
+      padding: 5rem 2rem;
+    }
+  }
+
+  &__ph {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 5rem 10rem;
+    grid-gap: 5rem 10rem;
+
+    @media only screen and (max-width: 800px) {
+      padding: 5rem 0;
+    }
+  }
+}
+
+.visi-misi {
+  margin-top: 8rem;
+  padding: 5rem;
+  background-color: var(--color-green-1);
+
+  @media only screen and (max-width: 900px) {
+    margin-top: 0;
+  }
+}
+
+.visi {
+  margin-bottom: 2rem;
+  text-align: right;
+  width: 60%;
+  margin-left: auto;
+
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+  }
+
+  .heading-secondary {
+    background-color: var(--color-yellow-2);
+    display: inline-block;
+    color: white;
+    padding: 0 0.5rem 0 1rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .text {
+    color: white;
+  }
+}
+
+.misi {
+  &__items {
+    margin-left: 2rem;
+    color: white;
+  }
+
+  .heading-secondary {
+    background-color: var(--color-yellow-2);
+    display: inline-block;
+    color: white;
+    padding: 0 1rem 0 0.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.circle {
+  background: radial-gradient(
+    farthest-corner at 20px 20px,
+    var(--color-yellow-2) 0%,
+    var(--color-green-1) 100%
+  );
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5rem;
+
+  &--white {
+    background: radial-gradient(
+      farthest-corner at -20px 20px,
+      var(--color-light-grey-1) 0%,
+      transparent 100%
+    );
+  }
+}

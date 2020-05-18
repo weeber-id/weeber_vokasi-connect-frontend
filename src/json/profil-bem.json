@@ -1,6 +1,6 @@
 [
   {
-    "id": "pi",
+    "id": "pengurus-inti",
     "name": "Pengurus Inti BEM Vokasi UI 2020",
     "hero": "hero-pi.jpg",
     "pejabat": [
@@ -71,8 +71,14 @@
         "foto": "fotopi-11.png"
       }
     ],
-    "next": "keuangan",
-    "previous": ""
+    "next": {
+      "text": "Keuangan",
+      "link": "keuangan"
+    },
+    "previous": {
+      "text": "Visi dan Misi",
+      "link": "visi-misi"
+    }
   },
   {
     "id": "keuangan",
@@ -115,11 +121,17 @@
       "Open Pre-Order",
       "Partnership Insidentil"
     ],
-    "next": "kestari",
-    "previous": "pi"
+    "next": {
+      "text": "Kesekretariatan",
+      "link": "kesekretariatan"
+    },
+    "previous": {
+      "text": "Pengurus Inti",
+      "link": "pengurus-inti"
+    }
   },
   {
-    "id": "kestari",
+    "id": "kesekretariatan",
     "name": "Biro Kesekretariatan",
     "hero": "hero-kestari.jpg",
     "description": "Biro Kesekretariatan menunjang BEM Vokasi UI 2020 dalam hal pengelolaan administrasi, manajerial, dan operasional. Dalam hal administrasi, biro kesekretariatan berfungsi dalam kegiatan surat-menyurat dan pengarsipan SOP, Proposal, dan LPJ kegiatan. Fungsi manajerial terkait dengan pengendalian linimasa kerja. Dalam hal operasional, biro kesekretariatan bertanggung jawab untuk menjaga aset-aset dan inventaris BEM Vokasi UI.",
@@ -155,8 +167,14 @@
       "Pelatihan Sekretaris Bendahara",
       "Open Data"
     ],
-    "next": "sosmaling",
-    "previous": "keuangan"
+    "next": {
+      "text": "Sosial Masyarakat & Lingkungan",
+      "link": "sosmaling"
+    },
+    "previous": {
+      "text": "Keuangan",
+      "link": "keuangan"
+    }
   },
   {
     "id": "sosmaling",
@@ -199,8 +217,14 @@
       "Bantuan Sosial Vokasi",
       "Peduli Lingkungan & Media Relasi"
     ],
-    "next": "adkesma",
-    "previous": "kestari"
+    "next": {
+      "text": "Advokasi & Kesejahteraan Mahasiswa",
+      "link": "adkesma"
+    },
+    "previous": {
+      "text": "Kesekretariatan",
+      "link": "kesekretariatan"
+    }
   },
   {
     "id": "adkesma",
@@ -248,8 +272,14 @@
       "Vokasi Sehat Mental",
       "(Notis) Nongkrong Kritis"
     ],
-    "next": "kastrat",
-    "previous": "sosmaling"
+    "next": {
+      "text": "Kajian & Aksi Strategis",
+      "link": "kastrat"
+    },
+    "previous": {
+      "text": "Sosial & Masyarakat Lingkungan",
+      "link": "sosmaling"
+    }
   },
   {
     "id": "kastrat",
@@ -291,11 +321,17 @@
       "Asupan Kastrat",
       "Kajian Tahunan"
     ],
-    "next": "depor",
-    "previous": "adkesma"
+    "next": {
+      "text": "Olahraga",
+      "link": "olahraga"
+    },
+    "previous": {
+      "text": "Advokasi & Kesejahteraan Mahasiswa",
+      "link": "adkesma"
+    }
   },
   {
-    "id": "depor",
+    "id": "olahraga",
     "name": "Departemen Olahraga",
     "hero": "hero-depor.jpg",
     "description": "Departemen Olahraga memiliki fungsi sebagai wadah penyaluran dan pengembangan minat bakat mahasiswa Vokasi UI dalam bidang olahraga. Selain itu, departemen ini juga mengedepankan apresiasi terhadap atlet atau kontingen olahraga Vokasi UI yang berkompetisi di tingkat Universitas,Regional, maupun Nasional.",
@@ -344,8 +380,14 @@
       "Vokasi in OlimUI",
       "Latihan Rutin Komunitas Olahraga Vokasi"
     ],
-    "next": "senbud",
-    "previous": "kastrat"
+    "next": {
+      "text": "Seni & Budaya",
+      "link": "senbud"
+    },
+    "previous": {
+      "text": "Kajian & Aksi Strategis",
+      "link": "kastrat"
+    }
   },
   {
     "id": "senbud",
@@ -393,8 +435,14 @@
       "Vokasi in UI Art War",
       "Latihan Rutin Komunitas Seni Vokasi"
     ],
-    "next": "p&k",
-    "previous": "depor"
+    "next": {
+      "text": "Pendidikan & Keilmuwan",
+      "link": "p&k"
+    },
+    "previous": {
+      "text": "Olahraga",
+      "link": "olahraga"
+    }
   },
   {
     "id": "p&k",
@@ -441,12 +489,18 @@
       "Vokasi Road to OIM UI",
       "Vokasi Act in OIM UI"
     ],
-    "next": "pemkar",
-    "previous": "senbud"
+    "next": {
+      "text": "Pengembangan Karier",
+      "link": "pemkar"
+    },
+    "previous": {
+      "text": "Seni & Budaya",
+      "link": "senbud"
+    }
   },
   {
     "id": "pemkar",
-    "name": "Departemen KPengembangan Karier",
+    "name": "Departemen Pengembangan Karier",
     "hero": "hero-pemkar.jpg",
     "description": "Departemen Pengembangan Karier memiliki fungsi sebagai wadah pengembangan keterampilan mahasiswa Vokasi dalam mempersiapkan karier pasca kampus. Selain itu, Departemen Pengembangan Karier dapat menjadi tempat pemberdayaan inovasi bagi mahasiswa Vokasi UI.",
     "pejabat": [
@@ -485,8 +539,14 @@
       "Adinda Kanisa Putri"
     ],
     "proker": ["UI Vocational Expo", "Vorment Day", "Info Magang"],
-    "next": "litbang",
-    "previous": "p&k"
+    "next": {
+      "text": "Penelitian & Pengembangan",
+      "link": "litbang"
+    },
+    "previous": {
+      "text": "Pendidikan & Keilmuwan",
+      "link": "p&k"
+    }
   },
   {
     "id": "litbang",
@@ -518,8 +578,14 @@
       "Riset Awal dan Akhir Tahun",
       "Quality Control"
     ],
-    "next": "psdm",
-    "previous": "pemkar"
+    "next": {
+      "text": "PSDM",
+      "link": "psdm"
+    },
+    "previous": {
+      "text": "Pengembangan Karier",
+      "link": "pemkar"
+    }
   },
   {
     "id": "psdm",
@@ -557,8 +623,14 @@
       "Open Recruitment Staff Magang",
       "Farewell"
     ],
-    "next": "humas",
-    "previous": "litbang"
+    "next": {
+      "text": "Hubungan Masyarakat",
+      "link": "humas"
+    },
+    "previous": {
+      "text": "Penelitian & Pengembangan",
+      "link": "litbang"
+    }
   },
   {
     "id": "humas",
@@ -592,8 +664,14 @@
       "Welcoming Mahasiswa Baru",
       "Mading"
     ],
-    "next": "dkv",
-    "previous": ""
+    "next": {
+      "text": "Desain Komunikasi Visual",
+      "link": "dkv"
+    },
+    "previous": {
+      "text": "PSDM",
+      "link": "psdm"
+    }
   },
   {
     "id": "dkv",
@@ -629,7 +707,13 @@
       "Buletin",
       "Podcast"
     ],
-    "next": "",
-    "previous": "humas"
+    "next": {
+      "text": "",
+      "link": ""
+    },
+    "previous": {
+      "text": "Hubungan Masyarakat",
+      "link": "humas"
+    }
   }
 ]

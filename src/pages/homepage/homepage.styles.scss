@@ -4,6 +4,48 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    overflow: hidden;
+
+    .btn {
+      position: relative;
+      z-index: 10;
+    }
+
+    .heroes {
+      &__welcome,
+      &__picture {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      &__picture {
+        margin-bottom: -17rem;
+        margin-top: -9rem;
+        z-index: 0;
+        position: relative;
+        min-width: 60rem;
+      }
+    }
+
+    .heading-primary {
+      margin-top: 8rem;
+      font-size: 2.8rem;
+      width: auto;
+
+      span {
+        display: inline-block;
+        width: 100%;
+
+        &:first-child {
+          color: white;
+        }
+      }
+    }
+  }
+
   &__welcome {
     width: 50%;
 
@@ -25,6 +67,34 @@
 .aspirasi {
   padding: 3rem 5rem;
   background-color: var(--color-light-grey-1);
+  position: relative;
+  z-index: 5;
+
+  @media only screen and (max-width: 600px) {
+    .heading-primary {
+      text-align: left;
+      font-size: 2.6rem;
+    }
+    .aspirasi {
+      &__content {
+        flex-direction: column;
+      }
+
+      &__description,
+      &__picture {
+        width: 100%;
+      }
+
+      &__description {
+        order: 1;
+        text-align: justify;
+      }
+
+      &__picture {
+        order: 2;
+      }
+    }
+  }
 
   &__content {
     display: flex;
@@ -70,7 +140,7 @@
   padding: 3rem 5rem;
   margin-top: -7rem;
   position: relative;
-  z-index: 4;
+  z-index: 8;
   background-color: var(--color-navy-1);
 
   .kurung {

@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import Triumph from './pages/triumph_of_spartan/triumph_of_spartan_page';
 import ProdiPage from './pages/info_prodi/info_prodi_page';
 import ArticlePage from './pages/article-page/article';
+import BemVokasiPage from './pages/bem-vokasi-page/bem-vokasi-page';
 import ArticlePageDetail from './pages/article-page-detail/article-page-detail';
 import HomePage from './pages/homepage/homepage';
 import EventPage from './pages/event-page/event-page';
@@ -58,6 +59,7 @@ function App() {
         component={LembagaVokasiDetailPage}
       />
       <Route exact path="/artikel/:id" component={ArticlePageDetail} />
+      <Route exact path="/profil-organisasi/:id" component={BemVokasiPage} />
     </div>
   );
 }

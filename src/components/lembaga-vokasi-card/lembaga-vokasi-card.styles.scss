@@ -12,12 +12,12 @@
 
   &__img-container {
     margin-right: 2rem;
-    height: 10rem;
+    height: 7rem;
   }
 
   &__img {
-    height: 10rem;
-    width: 10rem;
+    height: 7rem;
+    width: 7rem;
     object-position: center;
     object-fit: cover;
     border-radius: 50%;
@@ -27,6 +27,6 @@
   &__nama-lembaga {
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }

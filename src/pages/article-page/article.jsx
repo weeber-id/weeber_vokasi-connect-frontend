@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
@@ -10,6 +10,8 @@ const ArticlePage = () => {
   const [articles, setArticles] = useState([{ id: '' }]);
   const [isLoading, setLoading] = useState(true);
   const [isError, setError] = useState(false);
+
+  const history = useHistory();
 
   useEffect(() => {
     const url = 'http://35.240.223.151:8003';
@@ -62,17 +64,16 @@ const ArticlePage = () => {
               <ArtikelCard type="skeleton" />
             </>
           ) : isError ? (
-            <span>Oops Error</span>
+            <span>Oops Error, Please Reload or Comeback again later!</span>
           ) : (
             articles?.map((article) => (
-              <>
-                <Link
-                  style={{ textDecoration: 'none', color: 'inherit' }}
-                  to={`/artikel/${article.id}`}
-                >
-                  <ArtikelCard key={article.id} {...article} />
-                </Link>
-              </>
+              <ArtikelCard
+                onClick={() => {
+                  history.push(`/artikel/${article.id}`);
+                }}
+                key={article.id}
+                {...article}
+              />
             ))
           )}
         </section>
