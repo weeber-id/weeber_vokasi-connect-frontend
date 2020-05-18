@@ -1,18 +1,35 @@
 .button-header-container {
-  background-color: var(--color-green-1);
-
-  padding-top: 12rem;
-  padding-left: 5rem;
-  padding-bottom: 4rem;
+  padding-top: 4rem;
   display: grid;
-  align-items: center;
-  align-content: space-around;
-  justify-content: space-between;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  min-width: 100rem;
+  margin: 0 auto;
+  grid-gap: 0 2rem;
+  max-width: 110rem;
 
-  @media only screen and (max-width: 600px) {
-    padding-left: 8rem;
+  @media only screen and (max-width: 800px) {
+    min-width: 50rem;
+    max-width: 50rem;
+    grid-gap: 1rem;
+    .text {
+      font-size: 1.2rem;
+    }
   }
+}
+
+.data-publik-detail-page {
+  min-width: 100rem;
+
+  @media only screen and (max-width: 800px) {
+    min-width: 70rem;
+    max-width: 80rem;
+  }
+}
+
+.fake-header {
+  padding-top: 8rem;
+  background-color: var(--color-green-1);
+  padding-bottom: 4rem;
 }
 
 .data-publik-container {
@@ -26,13 +43,18 @@
   overflow-x: auto;
 }
 
-.btn {
+.btn--up-page {
   background-color: var(--color-green-1);
   justify-content: space-evenly;
   border: 0.2rem solid white;
   color: white;
   border-radius: 114px;
-  width: 20rem;
+  width: 100%;
+
+  &.active {
+    background-color: #fff;
+    color: var(--color-green-1);
+  }
 
   @media (hover: hover) {
     &:hover {
@@ -43,27 +65,38 @@
 }
 
 .data-publik-table {
-  border-spacing: 2rem;
-
+  min-width: 100rem;
+  margin: 0 auto;
   border-collapse: collapse;
 
+  @media only screen and (max-width: 800px) {
+    min-width: 50rem;
+    font-size: 1.2rem;
+  }
+
   th {
-    border: 1px solid white;
     padding: 1rem;
     text-align: center;
     background-color: white;
     color: var(--color-green-1);
   }
 
+  th,
   td {
-    border: 1px solid var(--color-green-1);
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid white;
+  }
+
+  td {
     padding: 1rem;
     text-align: center;
     background-color: var(--color-green-1);
     color: white;
-  }
-  tbody tr:hover {
-    background: var(--color-light-blue-1);
   }
 }
 

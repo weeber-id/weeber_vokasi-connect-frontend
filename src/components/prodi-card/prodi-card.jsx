@@ -8,6 +8,7 @@ const ProdiCard = ({ svgUrl, title, linkUrl }) => {
       style={{ textDecoration: 'none' }}
       target="blank"
       rel="noopener noreferrer"
+      className="prodi-card__link"
     >
       <div className="prodi-card">
         <div className="prodi-card__title">

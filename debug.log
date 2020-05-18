@@ -302,3 +302,18 @@
 [0514/172233.816:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0514/172233.816:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0514/172233.816:ERROR:crash_report_database_win.cc(469)] failed to stat report
+<<<<<<< HEAD
+=======
+[0515/170915.747:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0515/170915.779:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0515/170915.779:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0515/170915.779:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0515/172920.096:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0515/172920.097:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0515/172920.097:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0515/172920.097:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0516/210850.979:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0516/210850.999:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0516/210850.999:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0516/210850.999:ERROR:crash_report_database_win.cc(469)] failed to stat report
+>>>>>>> 365b0161cf658f2cac7d655b86b3ce2234b02da7

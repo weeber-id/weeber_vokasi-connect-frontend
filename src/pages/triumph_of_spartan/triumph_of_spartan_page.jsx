@@ -93,24 +93,10 @@ const Triumph = () => {
   });
 
   const params = {
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      },
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 0
-      }
-    },
     slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: true,
-    initialSlide: 1,
+    initialSlide: 0,
     navigation: {
       el: '.swiper-navigation',
       clickable: true
@@ -137,7 +123,9 @@ const Triumph = () => {
         <div className="tos-carousel">
           <Swiper getSwiper={setSwiper} {...params}>
             {tosImg.map(({ id, ...tosImgProps }) => (
-              <TosCarousel {...tosImgProps} active={id === activeIndex} />
+              <div>
+                <TosCarousel {...tosImgProps} active={id === activeIndex} />
+              </div>
             ))}
           </Swiper>
           <div onClick={slideNext} className="arrowTos__right" />
@@ -154,15 +142,13 @@ const Triumph = () => {
             </h1>
           </div>
           <h2
-            style={{ color: 'tos' }}
+            style={{ color: 'tos', marginTop: '4rem', marginBottom: '4rem' }}
             className="heading-secondary text-align-center"
           >
-            Triumph Of Spartan merupakan ruang apresiasi bagi mahasiswa <br />
-            dan kontingen Vokasi UI yang berlaga dalam OLIM UI, UI Art War,
-            <br />
-            dan OIM UI. Triumph Of Spartans bergerak didasari oleh rasa cinta
-            <br />
-            dan kebanggaan terhadap Vokasi UI.
+            Triumph Of Spartan merupakan ruang apresiasi bagi mahasiswa dan
+            kontingen Vokasi UI yang berlaga dalam OLIM UI, UI Art War, dan OIM
+            UI. Triumph Of Spartans bergerak didasari oleh rasa cinta dan
+            kebanggaan terhadap Vokasi UI.
           </h2>
           <div className="tos-event-card-container">
             {tosEvent.map(({ id, ...tosEventProps }) => (
@@ -173,7 +159,7 @@ const Triumph = () => {
         <section className="tos-doc">
           <h1
             className="heading-primary text-align-center"
-            style={{ color: 'tos' }}
+            style={{ color: 'tos', marginBottom: '5rem' }}
           >
             Dokumentasi
           </h1>
