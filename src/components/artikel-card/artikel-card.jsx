@@ -5,8 +5,12 @@ const ArtikelCard = ({
   date_created = new Date(),
   content = '',
   type = '',
+<<<<<<< HEAD
+  onClick
+=======
   onClick,
   thumbnail
+>>>>>>> 365b0161cf658f2cac7d655b86b3ce2234b02da7
 }) => {
   let slicedContent = content;
 
@@ -36,6 +40,9 @@ const ArtikelCard = ({
 
   return (
     <div onClick={onClick} className="artikel-card">
+<<<<<<< HEAD
+      <div className="artikel-card__thumbnail"></div>
+=======
       <div className="artikel-card__thumbnail">
         {!thumbnail ? (
           <img
@@ -51,6 +58,7 @@ const ArtikelCard = ({
           />
         )}
       </div>
+>>>>>>> 365b0161cf658f2cac7d655b86b3ce2234b02da7
       <div className="artikel-card__preview">
         <h3 className="artikel-card__title">{title}</h3>
         <h4 className="artikel-card__date">

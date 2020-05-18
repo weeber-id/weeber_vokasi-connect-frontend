@@ -35,7 +35,11 @@ const HomePage = () => {
 
   const handleClick = () => {
     window.scrollTo({
+<<<<<<< HEAD
+      top: aspirasiRef.current.scrollHeight - 80,
+=======
       top: aspirasiRef.current.scrollHeight - 50,
+>>>>>>> 365b0161cf658f2cac7d655b86b3ce2234b02da7
       behavior: 'smooth'
     });
   };
@@ -75,8 +79,13 @@ const HomePage = () => {
       <main>
         <section className="heroes">
           <div className="heroes__welcome">
+<<<<<<< HEAD
+            <h1 style={{ color: '#fff' }} className="heading-primary">
+              <span>
+=======
             <h1 className="heading-primary">
               <span style={{ color: 'white' }}>
+>>>>>>> 365b0161cf658f2cac7d655b86b3ce2234b02da7
                 Selamat datang!
                 <br />
                 Mari berjejaring bersama di
