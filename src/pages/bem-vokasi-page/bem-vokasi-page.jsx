@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 import { ReactComponent as LogoHero } from '../../assets/logos/logo-profil.svg';
-import { ReactComponent as Wing } from '../../assets/logos/wing.svg';
-import { ReactComponent as Bird } from '../../assets/logos/bird.svg';
-import { ReactComponent as BirdColor } from '../../assets/logos/bird-color.svg';
+import { ReactComponent as Wing } from '../../assets/logos/logo1-01.svg';
+import { ReactComponent as Bird } from '../../assets/logos/logo2-01.svg';
+import { ReactComponent as BirdColor } from '../../assets/logos/logo3-01.svg';
 import profilBem from '../../json/profil-bem.json';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
