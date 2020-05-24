@@ -4,7 +4,7 @@ import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import LembagaVokasiCard from '../../components/lembaga-vokasi-card/lembaga-vokasi-card';
 
-import { ReactComponent as Illustration } from '../../assets/illustrations/lembaga-vokasi-ui.svg';
+import { ReactComponent as Illustration } from '../../assets/illustrations/lembaga vokasi ai-01.svg';
 
 const LembagaVokasiPage = () => {
   const [isCollapse, setCollapse] = useState(true);

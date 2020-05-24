@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
 import ProdiCard from '../../components/prodi-card/prodi-card';
-import { ReactComponent as ProdiIllustration } from '../../assets/illustrations/barunih-01.svg';
+import { ReactComponent as ProdiIllustration } from '../../assets/illustrations/logo23mei.svg';
 import './info-prodi_page.styles.scss';
 import prodi1 from '../../assets/icons/infoprodiurutan-01.svg';
 import prodi2 from '../../assets/icons/infoprodiurutan-02.svg';
