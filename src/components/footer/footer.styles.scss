@@ -42,7 +42,7 @@
       color: white;
 
       @media only screen and (max-width: 650px) {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
       }
     }
   }
@@ -69,6 +69,7 @@
     font-size: 0.8rem;
     width: 50%;
     margin-top: -6rem;
+    text-align: right;
   }
 
   &__socmed {

@@ -209,7 +209,7 @@ const Header = ({ className = '', color }) => {
             <Link
               style={{ marginRight: 0 }}
               className="header__item"
-              to="/info-vokasi"
+              to="/info-vokasi/ruang-prestasi"
             >
               <span>Info Vokasi</span>
             </Link>

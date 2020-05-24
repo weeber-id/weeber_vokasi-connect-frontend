@@ -11,6 +11,10 @@ import EventCard from '../../components/event-card/event-card';
 const EventPage = () => {
   const [swiper, setSwiper] = useState(null);
   const [activeIndex, setIndex] = useState(2);
+  const [events, setEvents] = useState([]);
+  const [isFetching, setFetching] = useState(true);
+
+  const url = 'http://35.240.223.151:8003';
 
   useEffect(() => {
     if (swiper !== null) {
@@ -25,6 +29,18 @@ const EventPage = () => {
       });
     }
   });
+
+  useEffect(() => {
+    fetch(`${url}/events`)
+      .then((res) => res.json())
+      .then((data) => {
+        setEvents(data.data);
+        setFetching(false);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const event = [
     {
@@ -77,8 +93,7 @@ const EventPage = () => {
     pagination: {
       el: '.swiper-pagination',
       clickable: true
-    },
-    updateOnWindowResize: true
+    }
   };
 
   const slideNext = () => {
@@ -106,13 +121,21 @@ const EventPage = () => {
           </h1>
           <div className="event-page__swiper">
             <Swiper getSwiper={setSwiper} {...params}>
-              {event.map((item, i) => {
-                return (
-                  <div key={i}>
-                    <EventCard active={i === activeIndex} />
-                  </div>
-                );
-              })}
+              {isFetching
+                ? event.map((item, i) => {
+                    return (
+                      <div key={i}>
+                        <EventCard {...item} active={i === activeIndex} />
+                      </div>
+                    );
+                  })
+                : events?.map((item, i) => {
+                    return (
+                      <div key={i}>
+                        <EventCard {...item} active={i === activeIndex} />
+                      </div>
+                    );
+                  })}
             </Swiper>
             <div onClick={slideNext} className="arrow__right" />
             <div onClick={slidePrev} className="arrow__left" />

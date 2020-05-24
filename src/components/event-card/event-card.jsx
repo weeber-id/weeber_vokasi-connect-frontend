@@ -1,15 +1,16 @@
 import React from 'react';
 
-const EventCard = ({ active = false }) => {
+const EventCard = ({ active = false, url, title, image }) => {
   return (
-    <div className={`event-card ${active ? 'active' : ''}`}>
-      <img
-        src={require('../../assets/icons/twitter.svg')}
-        alt=""
-        className="event-card__img"
-      />
-      <h5 style={{ color: 'white' }} className="text mt-sm">
-        Bina Desa
+    <div
+      onClick={() => {
+        window.location.href = url;
+      }}
+      className={`event-card ${active ? 'active' : ''}`}
+    >
+      <img src={image} alt={`event-${title}`} className="event-card__img" />
+      <h5 style={{ color: 'white' }} className="text text-align-center mt-sm">
+        {title}
       </h5>
     </div>
   );

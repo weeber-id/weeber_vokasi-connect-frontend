@@ -9,6 +9,7 @@
   transition: transform 0.3s;
   transform: scale(0.8);
   height: 18rem;
+  cursor: pointer;
 
   &.active {
     transform: scale(1);
@@ -16,6 +17,9 @@
 
   &__img {
     width: 10rem;
-    height: auto;
+    height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
   }
 }
