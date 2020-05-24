@@ -1,0 +1,89 @@
+.up-page {
+  padding: 0rem 5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-green-1);
+  margin-top: -12rem;
+
+  @media only screen and (max-width: 1100px) {
+    margin-top: -6rem;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: 0rem;
+  }
+
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem;
+  }
+
+  &__heroes-text {
+    padding-top: 10rem;
+    background-color: var(--color-green-1);
+    padding-bottom: 4rem;
+  }
+  &__buttons {
+    margin: 0 auto;
+
+    @media only screen and (max-width: 850px) {
+      margin-bottom: -5rem;
+    }
+    .btn--up-page {
+      background-color: var(--color-green-1);
+      border: 0.3rem solid white;
+      color: white;
+      border-radius: 114px;
+      width: 30rem;
+
+      @media only screen and (max-width: 850px) {
+        width: 28rem;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: var(--color-yellow-1);
+          color: var(--color-green-1);
+        }
+      }
+    }
+
+    span {
+      color: var(--color-yellow-1);
+    }
+  }
+
+  &__picture {
+    width: 50%;
+
+    @media only screen and (max-width: 850px) {
+      order: 2;
+      width: 100%;
+    }
+
+    svg {
+      width: 100%;
+      height: auto;
+      min-width: 32rem;
+    }
+  }
+}
+
+.tambahan {
+  height: 8rem;
+  width: 100%;
+  background-color: var(--color-yellow-2);
+  align-items: flex-end;
+  margin-top: -14rem;
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: -12rem;
+  }
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem 3rem;
+}
