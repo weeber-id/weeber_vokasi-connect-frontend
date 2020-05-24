@@ -12,6 +12,8 @@ import { ReactComponent as Beranda2 } from '../../assets/illustrations/beranda2.
 import { ReactComponent as Akademik } from '../../assets/icons/akademik.svg';
 import { ReactComponent as Fasilitas } from '../../assets/icons/fasilitas.svg';
 import { ReactComponent as Finansial } from '../../assets/icons/finansial.svg';
+import { ReactComponent as KekerasanSeksual } from '../../assets/icons/kekerasanseksual-01.svg';
+import { ReactComponent as KesehatanMental } from '../../assets/icons/kesehatanmental-01.svg';
 
 const HomePage = () => {
   const [state, setState] = useState({
@@ -129,6 +131,14 @@ const HomePage = () => {
               <div className="aspirasi__item">
                 <Finansial className="aspirasi__icon" />
                 <span>Finansial</span>
+              </div>
+              <div className="aspirasi__item">
+                <KekerasanSeksual className="aspirasi__icon" />
+                <span>Kekerasan Seksual</span>
+              </div>
+              <div className="aspirasi__item">
+                <KesehatanMental className="aspirasi__icon" />
+                <span>Kesehatan Mental</span>
               </div>
             </div>
           </div>
