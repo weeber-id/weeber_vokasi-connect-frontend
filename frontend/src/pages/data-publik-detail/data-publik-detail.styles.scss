@@ -1,0 +1,106 @@
+.button-header-container {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-width: 100rem;
+  margin: 0 auto;
+  grid-gap: 0 2rem;
+  max-width: 110rem;
+
+  @media only screen and (max-width: 800px) {
+    min-width: 50rem;
+    max-width: 50rem;
+    grid-gap: 1rem;
+    .text {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.data-publik-detail-page {
+  min-width: 100rem;
+
+  @media only screen and (max-width: 800px) {
+    min-width: 70rem;
+    max-width: 80rem;
+  }
+}
+
+.fake-header {
+  padding-top: 8rem;
+  background-color: var(--color-green-1);
+  padding-bottom: 4rem;
+}
+
+.data-publik-container {
+  background-color: var(--color-green-1);
+  padding-bottom: 8rem;
+
+  display: grid;
+
+  align-items: center;
+  padding-top: 5rem;
+  overflow-x: auto;
+}
+
+.btn--up-page {
+  background-color: var(--color-green-1);
+  justify-content: space-evenly;
+  border: 0.2rem solid white;
+  color: white;
+  border-radius: 114px;
+  width: 100%;
+
+  &.active {
+    background-color: #fff;
+    color: var(--color-green-1);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-yellow-1);
+      color: var(--color-green-1);
+    }
+  }
+}
+
+.data-publik-table {
+  min-width: 100rem;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  @media only screen and (max-width: 800px) {
+    min-width: 50rem;
+    font-size: 1.2rem;
+  }
+
+  th {
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    color: var(--color-green-1);
+  }
+
+  th,
+  td {
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid white;
+  }
+
+  td {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--color-green-1);
+    color: white;
+  }
+}
+
+.data-publik-table-title {
+  background-color: var(--color-green-1);
+  color: white;
+}

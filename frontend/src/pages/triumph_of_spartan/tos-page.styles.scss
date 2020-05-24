@@ -1,0 +1,103 @@
+.tos-event-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-gap: 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tos-carousel {
+  position: relative;
+}
+
+.tos-event {
+  &__tambahan {
+    height: 8rem;
+    width: 100%;
+    background-color: var(--color-black-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heading-primary {
+      font-size: 3rem;
+    }
+  }
+
+  .heading-secondary {
+    width: 90%;
+    font-weight: 400;
+    margin: 2rem auto;
+    font-size: 2.6rem;
+  }
+}
+
+.tos-doc {
+  padding: 0 3rem;
+  padding-bottom: 8rem;
+  margin-top: 6rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 3rem;
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    }
+  }
+}
+
+.swiper {
+  position: relative;
+}
+.arrowTos {
+  @mixin arrow($deg) {
+    border-right: 0.8rem solid rgba(white, 0.5);
+    border-bottom: 0.8rem solid rgba(white, 0.5);
+    height: 3rem;
+    width: 3rem;
+    transform: rotate($deg) translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @media (hover: hover) {
+      &:hover {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-right: 1rem solid rgba(white, 0.7);
+        border-bottom: 1rem solid rgba(white, 0.7);
+      }
+    }
+  }
+
+  &__right {
+    @include arrow(-45deg);
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 100;
+
+    @media only screen and (max-width: 800px) {
+      right: 25%;
+    }
+    @media only screen and (max-width: 480px) {
+      right: 0;
+    }
+  }
+
+  &__left {
+    @include arrow(135deg);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 100;
+
+    @media only screen and (max-width: 800px) {
+      left: 25%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      left: 0;
+    }
+  }
+}
