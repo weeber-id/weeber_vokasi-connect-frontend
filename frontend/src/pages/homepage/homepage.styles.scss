@@ -104,6 +104,7 @@
   &__picture {
     width: 50%;
     align-self: flex-end;
+    margin-bottom: -7rem;
     margin-top: 5rem;
 
     svg {
@@ -114,6 +115,11 @@
 
   &__description {
     width: 50%;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
   }
 
   &__item {
@@ -139,7 +145,7 @@
 
 .form-aspirasi {
   padding: 3rem 5rem;
-  margin-top: -7rem;
+  margin-top: -10rem;
   position: relative;
   z-index: 8;
   background-color: var(--color-navy-1);

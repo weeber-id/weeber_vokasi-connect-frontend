@@ -43,7 +43,7 @@ const HomePage = () => {
   };
 
   const submitForm = () => {
-    const url = 'http://35.240.223.151:8003';
+    const url = 'https://api.vokasiconnect.id';
 
     const body = JSON.stringify({
       nama,
@@ -120,25 +120,27 @@ const HomePage = () => {
                 <br /> <br />
                 Beberapa hal yang bisa kalian sampaikan,
               </p>
-              <div className="aspirasi__item">
-                <Akademik className="aspirasi__icon" />
-                <span>Akademik</span>
-              </div>
-              <div className="aspirasi__item">
-                <Fasilitas className="aspirasi__icon" />
-                <span>Fasilitas</span>
-              </div>
-              <div className="aspirasi__item">
-                <Finansial className="aspirasi__icon" />
-                <span>Finansial</span>
-              </div>
-              <div className="aspirasi__item">
-                <KekerasanSeksual className="aspirasi__icon" />
-                <span>Kekerasan Seksual</span>
-              </div>
-              <div className="aspirasi__item">
-                <KesehatanMental className="aspirasi__icon" />
-                <span>Kesehatan Mental</span>
+              <div className="aspirasi__items">
+                <div className="aspirasi__item">
+                  <Akademik className="aspirasi__icon" />
+                  <span>Akademik</span>
+                </div>
+                <div className="aspirasi__item">
+                  <Fasilitas className="aspirasi__icon" />
+                  <span>Fasilitas</span>
+                </div>
+                <div className="aspirasi__item">
+                  <Finansial className="aspirasi__icon" />
+                  <span>Finansial</span>
+                </div>
+                <div className="aspirasi__item">
+                  <KekerasanSeksual className="aspirasi__icon" />
+                  <span>Kekerasan Seksual</span>
+                </div>
+                <div className="aspirasi__item">
+                  <KesehatanMental className="aspirasi__icon" />
+                  <span>Kesehatan Mental</span>
+                </div>
               </div>
             </div>
           </div>

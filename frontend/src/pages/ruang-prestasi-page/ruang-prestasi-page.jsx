@@ -12,7 +12,7 @@ const RuangPrestasi = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = 'http://35.240.223.151:8003';
+    const url = 'https://api.vokasiconnect.id';
     fetch(`${url}/all-ruang-prestasi`)
       .then((res) => res.json())
       .then((data) => {

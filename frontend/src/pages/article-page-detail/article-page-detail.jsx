@@ -23,7 +23,7 @@ const ArticlePageDetail = () => {
   const { title, author, date_created, content, thumbnail } = state;
 
   useEffect(() => {
-    const url = 'http://35.240.223.151:8003';
+    const url = 'https://api.vokasiconnect.id';
 
     setLoading(true);
     fetch(`${url}/article?id=${id}`)

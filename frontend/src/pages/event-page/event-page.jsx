@@ -14,7 +14,7 @@ const EventPage = () => {
   const [events, setEvents] = useState([]);
   const [isFetching, setFetching] = useState(true);
 
-  const url = 'http://35.240.223.151:8003';
+  const url = 'https://api.vokasiconnect.id';
 
   useEffect(() => {
     if (swiper !== null) {

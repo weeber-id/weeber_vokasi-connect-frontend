@@ -15,7 +15,7 @@ const DataPublikDetail = () => {
   console.log(data);
 
   useEffect(() => {
-    const url = 'http://35.240.223.151:8003';
+    const url = 'https://api.vokasiconnect.id';
     fetch(`${url}/all-portal-data`)
       .then((res) => res.json())
       .then((data) => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import Header from '../../components/header/header';
 import Footer from '../../components/footer/footer';
@@ -14,7 +14,7 @@ const ArticlePage = () => {
   const history = useHistory();
 
   useEffect(() => {
-    const url = 'http://35.240.223.151:8003';
+    const url = 'https://api.vokasiconnect.id';
 
     setLoading(true);
     fetch(`${url}/articles`)

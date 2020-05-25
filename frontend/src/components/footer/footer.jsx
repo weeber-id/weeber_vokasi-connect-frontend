@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer__socmed">
           <a
             className="footer__socmed-icon"
-            href="https://instagram.com/vokasi_ui"
+            href="https://instagram.com/bemvokasiui"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -31,15 +31,15 @@ const Footer = () => {
           </a>
           <a
             className="footer__socmed-icon"
-            href="https://instagram.com/vokasi_ui"
             target="_blank"
             rel="noopener noreferrer"
+            href="https://lin.ee/I9SQeDU"
           >
             <Line height="3rem" width="3rem" />
           </a>
           <a
+            href="https://twitter.com/bemvokasi_ui"
             className="footer__socmed-icon"
-            href="https://instagram.com/vokasi_ui"
             target="_blank"
             rel="noopener noreferrer"
           >
