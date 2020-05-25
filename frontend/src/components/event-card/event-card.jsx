@@ -4,11 +4,11 @@ const EventCard = ({ active = false, url, title, image }) => {
   return (
     <div
       onClick={() => {
-        window.location.href = url;
+        window.open(url, '_blank');
       }}
       className={`event-card ${active ? 'active' : ''}`}
     >
-      <img src={image} alt={`event-${title}`} className="event-card__img" />
+      <img src={image} className="event-card__img" />
       <h5 style={{ color: 'white' }} className="text text-align-center mt-sm">
         {title}
       </h5>
