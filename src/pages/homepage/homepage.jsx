@@ -12,8 +12,8 @@ import { ReactComponent as Beranda2 } from '../../assets/illustrations/beranda2.
 import { ReactComponent as Akademik } from '../../assets/icons/akademik.svg';
 import { ReactComponent as Fasilitas } from '../../assets/icons/fasilitas.svg';
 import { ReactComponent as Finansial } from '../../assets/icons/finansial.svg';
-import { ReactComponent as KekerasanSeksual } from '../../assets/icons/kekerasanseksual-01.svg';
-import { ReactComponent as KesehatanMental } from '../../assets/icons/kesehatanmental-01.svg';
+import { ReactComponent as KekerasanSeksual } from '../../assets/icons/kekerasanseksual24mei.svg';
+import { ReactComponent as KesehatanMental } from '../../assets/icons/kesehatanmental24mei.svg';
 
 const HomePage = () => {
   const [state, setState] = useState({
