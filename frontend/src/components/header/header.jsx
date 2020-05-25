@@ -95,7 +95,7 @@ const HeaderDropdown = ({ type }) => {
           </Link>
           <Link
             className="sub-dropdown__link"
-            to="/profil-organisasi/sospol/pemkar"
+            to="/profil-organisasi/profil-organisasi/pemkar"
           >
             <span className="profil-dropdown__item">Pengembangan Karir</span>
           </Link>
