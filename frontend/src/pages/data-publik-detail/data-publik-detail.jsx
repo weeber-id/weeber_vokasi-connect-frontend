@@ -9,30 +9,30 @@ import Button from '../../components/button/button';
 const DataPublikDetail = () => {
   const { id } = useParams();
   const name = id.split('-').join(' ').toUpperCase();
-
   const [data, setData] = useState([]);
-
-  console.log(data);
+  const [category, setCategory] = useState('');
 
   useEffect(() => {
+    if (id === 'data-riset') {
+      setCategory(1);
+    } else if (id === 'buletin') {
+      setCategory(2);
+    } else if (id === 'kajian-strategis') {
+      setCategory(3);
+    } else if (id === 'uu-ikm-vokasi-ui') {
+      setCategory(4);
+    }
+
     const url = 'https://api.vokasiconnect.id';
-    fetch(`${url}/all-portal-data`)
+    fetch(`${url}/portal-data?category_id=${category}`)
       .then((res) => res.json())
       .then((data) => {
-        const filteredData = data.data.filter((val) => {
-          if (val.category.name.toLowerCase() === 'kajian') {
-            val.category.name = 'kajian strategis';
-          }
-
-          return val.category.name.toLowerCase() === name.toLowerCase();
-        });
-
-        setData(filteredData);
+        setData(data.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [name]);
+  }, [id]);
 
   return (
     <article className="data-publik-detail-page">
@@ -93,14 +93,12 @@ const DataPublikDetail = () => {
               </thead>
               <tbody>
                 {data.map((val) => (
-                  <>
-                    <tr>
-                      <td>{val.title}</td>
-                      <td>BEM Vokasi UI 2020</td>
-                      <td>{val.tanggal}</td>
-                      <td>download</td>
-                    </tr>
-                  </>
+                  <tr key={`data-${val.id}`}>
+                    <td>{val.title}</td>
+                    <td>BEM Vokasi UI 2020</td>
+                    <td>{val.tanggal}</td>
+                    <td>download</td>
+                  </tr>
                 ))}
               </tbody>
             </table>
