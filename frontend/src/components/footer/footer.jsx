@@ -4,6 +4,7 @@ import { ReactComponent as LogoFooter } from '../../assets/logos/logobemfooter-0
 import { ReactComponent as Instagram } from '../../assets/icons/instagram.svg';
 import { ReactComponent as Line } from '../../assets/icons/line.svg';
 import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg';
+import { ReactComponent as Weeber } from '../../assets/icons/logoweeber-01.svg';
 
 const Footer = () => {
   return (
@@ -44,6 +45,14 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <Twitter height="3rem" width="3rem" />
+          </a>
+          <a
+            href="https://weeber.id"
+            className="footer__socmed-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Weeber height="3rem" width="3rem" />
           </a>
         </div>
         <div>

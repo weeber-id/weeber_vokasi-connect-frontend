@@ -34,6 +34,10 @@ const DataPublikDetail = () => {
       });
   }, [id]);
 
+  const handleDownload = (url) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <article className="data-publik-detail-page">
       <Header color="green" />
@@ -97,7 +101,14 @@ const DataPublikDetail = () => {
                     <td>{val.title}</td>
                     <td>BEM Vokasi UI 2020</td>
                     <td>{val.tanggal}</td>
-                    <td>download</td>
+                    <td
+                      style={{ cursor: 'pointer' }}
+                      onClick={() => {
+                        handleDownload(val.link);
+                      }}
+                    >
+                      download
+                    </td>
                   </tr>
                 ))}
               </tbody>
