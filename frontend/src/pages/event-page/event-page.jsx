@@ -119,27 +119,21 @@ const EventPage = () => {
           >
             Event Vokasi UI
           </h1>
-          <div className="event-page__swiper">
-            <Swiper getSwiper={setSwiper} {...params}>
-              {isFetching
-                ? event.map((item, i) => {
-                    return (
-                      <div key={i}>
-                        <EventCard {...item} active={i === activeIndex} />
-                      </div>
-                    );
-                  })
-                : events?.map((item, i) => {
-                    return (
-                      <div key={i}>
-                        <EventCard {...item} active={i === activeIndex} />
-                      </div>
-                    );
-                  })}
-            </Swiper>
-            <div onClick={slideNext} className="arrow__right" />
-            <div onClick={slidePrev} className="arrow__left" />
-          </div>
+          {isFetching ? null : (
+            <div className="event-page__swiper">
+              <Swiper getSwiper={setSwiper} {...params}>
+                {events?.map((item, i) => {
+                  return (
+                    <div key={i}>
+                      <EventCard {...item} active={i === activeIndex} />
+                    </div>
+                  );
+                })}
+              </Swiper>
+              <div onClick={slideNext} className="arrow__right" />
+              <div onClick={slidePrev} className="arrow__left" />
+            </div>
+          )}
         </div>
         <div className="event-page__tambahan" />
       </main>

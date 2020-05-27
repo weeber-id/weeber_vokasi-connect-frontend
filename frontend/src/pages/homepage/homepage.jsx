@@ -14,6 +14,7 @@ import { ReactComponent as Fasilitas } from '../../assets/icons/fasilitas.svg';
 import { ReactComponent as Finansial } from '../../assets/icons/finansial.svg';
 import { ReactComponent as KekerasanSeksual } from '../../assets/icons/kekerasanseksual-01.svg';
 import { ReactComponent as KesehatanMental } from '../../assets/icons/kesehatanmental-01.svg';
+import Loading from 'components/loading';
 
 const HomePage = () => {
   const [state, setState] = useState({
@@ -23,6 +24,8 @@ const HomePage = () => {
     hp: '',
     keluhan: ''
   });
+
+  const [isLoading, setLoading] = useState(false);
 
   const { nama, npm, prodi, hp, keluhan } = state;
   const aspirasiRef = useRef(null);
@@ -52,7 +55,7 @@ const HomePage = () => {
       no_hp: hp,
       keluhan
     });
-
+    setLoading(true);
     fetch(`${url}/aspiration`, {
       method: 'POST',
       body,
@@ -62,7 +65,15 @@ const HomePage = () => {
     })
       .then((res) => res.text())
       .then((data) => {
-        console.log(data);
+        setLoading(false);
+        setState({
+          nama: '',
+          npm: '',
+          prodi: '',
+          hp: '',
+          keluhan: ''
+        });
+        alert(data.message);
       })
       .catch((err) => {
         console.log(err);
@@ -72,6 +83,7 @@ const HomePage = () => {
   return (
     <article className="homepage">
       <Header />
+      {isLoading ? <Loading /> : null}
 
       {/* Section Heroes */}
       <main>
