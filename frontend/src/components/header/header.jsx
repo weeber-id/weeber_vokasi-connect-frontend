@@ -93,10 +93,7 @@ const HeaderDropdown = ({ type }) => {
               Pendidikan & Keilmuwan
             </span>
           </Link>
-          <Link
-            className="sub-dropdown__link"
-            to="/profil-organisasi/profil-organisasi/pemkar"
-          >
+          <Link className="sub-dropdown__link" to="/profil-organisasi/pemkar">
             <span className="profil-dropdown__item">Pengembangan Karir</span>
           </Link>
         </div>

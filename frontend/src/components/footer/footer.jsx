@@ -33,7 +33,7 @@ const Footer = () => {
             className="footer__socmed-icon"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://lin.ee/I9SQeDU"
+            href="https://lin.ee/l9SQeDU"
           >
             <Line height="3rem" width="3rem" />
           </a>
