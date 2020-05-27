@@ -1,19 +1,34 @@
 {
   "short_name": "Vokasi Connect",
+<<<<<<< HEAD
   "name": "Vokasi Connect",
   "icons": [
     {
       "src": "logo-profil.png",
+=======
+  "name": "Website utama BEM Vokasi UI 2020",
+  "icons": [
+    {
+      "src": "logo-profil.svg",
+>>>>>>> master
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
+<<<<<<< HEAD
       "src": "logo-profil.png",
+=======
+      "src": "logo-profil.svg",
+>>>>>>> master
       "type": "image/png",
       "sizes": "192x192"
     },
     {
+<<<<<<< HEAD
       "src": "logo-profil.png",
+=======
+      "src": "logo-profil.svg",
+>>>>>>> master
       "type": "image/png",
       "sizes": "512x512"
     }
