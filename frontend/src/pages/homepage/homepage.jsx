@@ -63,8 +63,22 @@ const HomePage = () => {
         'Content-Type': 'application/json'
       }
     })
-      .then((res) => res.text())
+      .then((res) => res.json())
       .then((data) => {
+        setLoading(false);
+        alert(
+          'Aspirasi kamu sudah masuk ke database kami, terimakasih telah berpartisipasi :)'
+        );
+        setState({
+          nama: '',
+          npm: '',
+          prodi: '',
+          hp: '',
+          keluhan: ''
+        });
+      })
+      .catch((err) => {
+        alert('opps terjadi kesalahan, mohon tunggu sebentar dan coba lagi :)');
         setLoading(false);
         setState({
           nama: '',
@@ -73,10 +87,6 @@ const HomePage = () => {
           hp: '',
           keluhan: ''
         });
-        alert(data.message);
-      })
-      .catch((err) => {
-        console.log(err);
       });
   };
 
