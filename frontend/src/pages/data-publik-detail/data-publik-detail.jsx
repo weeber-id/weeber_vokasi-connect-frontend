@@ -8,21 +8,19 @@ import Button from '../../components/button/button';
 
 const DataPublikDetail = () => {
   const { id } = useParams();
+  const defaultCategory =
+    id === 'data-riset'
+      ? 1
+      : id === 'buletin'
+      ? 2
+      : id === 'kajian-strategis'
+      ? 3
+      : 4;
   const name = id.split('-').join(' ').toUpperCase();
   const [data, setData] = useState([]);
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState(defaultCategory);
 
   useEffect(() => {
-    if (id === 'data-riset') {
-      setCategory(1);
-    } else if (id === 'buletin') {
-      setCategory(2);
-    } else if (id === 'kajian-strategis') {
-      setCategory(3);
-    } else if (id === 'uu-ikm-vokasi-ui') {
-      setCategory(4);
-    }
-
     const url = 'https://api.vokasiconnect.id';
     fetch(`${url}/portal-data?category_id=${category}`)
       .then((res) => res.json())
@@ -44,7 +42,7 @@ const DataPublikDetail = () => {
       <main>
         <section className="fake-header">
           <div className="button-header-container">
-            <Link to="/data-publik/data-riset">
+            <Link onClick={() => setCategory(1)} to="/data-publik/data-riset">
               <Button
                 className={`btn--up-page ${
                   id === 'data-riset' ? 'active' : ''
@@ -53,14 +51,17 @@ const DataPublikDetail = () => {
                 <h3 className="text">Data Riset</h3>
               </Button>
             </Link>
-            <Link to="/data-publik/buletin">
+            <Link onClick={() => setCategory(2)} to="/data-publik/buletin">
               <Button
                 className={`btn--up-page ${id === 'buletin' ? 'active' : ''}`}
               >
                 <h3 className="text">Buletin</h3>
               </Button>
             </Link>
-            <Link to="/data-publik/kajian-strategis">
+            <Link
+              onClick={() => setCategory(3)}
+              to="/data-publik/kajian-strategis"
+            >
               <Button
                 className={`btn--up-page ${
                   id === 'kajian-strategis' ? 'active' : ''
@@ -69,7 +70,10 @@ const DataPublikDetail = () => {
                 <h3 className="text">Kajian Strategis</h3>
               </Button>
             </Link>
-            <Link to="/data-publik/uu-ikm-vokasi-ui">
+            <Link
+              onClick={() => setCategory(4)}
+              to="/data-publik/uu-ikm-vokasi-ui"
+            >
               <Button
                 className={`btn--up-page ${
                   id === 'uu-ikm-vokasi-ui' ? 'active' : ''
