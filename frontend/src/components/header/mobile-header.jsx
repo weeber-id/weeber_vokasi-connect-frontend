@@ -166,7 +166,7 @@ const MobileHeader = ({ hidden, setHidden }) => {
             className="mobile-header__link"
             activeClassName="active"
           >
-            <span className="mobile-header__item">Ruang Prestrasi</span>
+            <span className="mobile-header__item">Ruang Prestasi</span>
           </NavLink>
           <NavLink
             to="/info-vokasi/info-prodi"
